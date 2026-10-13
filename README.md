@@ -1,2 +1,7 @@
-# Manada-Abierta
-🌎 Proyecto open source  Manada Abierta es un proyecto de código abierto, colaborativo y sin fines de lucro como propósito central.  Creemos que la tecnología puede ayudar a mejorar la vida de los animales cuando el conocimiento se comparte y la comunidad trabaja en conjunto.  Cualquier persona puede participar, proponer mejoras, informar errores.
+   _____ ____  ____  _____ ____        _   _  ___  _   _ ____  _____
+  / ____/ __ \|  _ \| ____|  _ \      | | | |/ _ \| | | / ___|| ____|
+ | |   | |  | | | | |  _| | |_) |     | |_| | | | | | | \___ \|  _|
+ | |___| |__| | |_| | |___|  _ <      |  _  | |_| | |_| |___) | |___
+  \_____\____/|____/|_____|_| \_\     |_| |_|\___/ \___/|____/|_____/
+
+                     LA CASA DEL CÓDIGO
