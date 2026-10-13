@@ -1,24 +1,1148 @@
 <!doctype html>
 <html lang="es-AR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f6f1">
-<meta name="description" content="Manada Abierta: una comunidad abierta para conectar adopciones responsables, ayuda veterinaria y convivencia segura.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff7d6">
+<meta name="description" content="Manada Abierta: una comunidad abierta para conectar adopciones responsables, ayuda veterinaria y convivencia segura. Mirá clips tiernos y subí a tu mascota tomando agua.">
 <title>Manada Abierta — Una red para cuidar mejor</title>
 <style>
-:root{--paper:#f7f6f1;--ink:#20231f;--muted:#6c716a;--line:#dfe2d8;--green:#345b42;--lime:#d6f277;--orange:#f0a36a;--white:#fff;--radius:22px;--shadow:0 16px 48px #2633240c}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit}button,input,select,textarea{font:inherit}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;letter-spacing:-.04em;font-size:1.12rem}.brandmark{width:42px;height:42px;border-radius:15px;background:var(--lime);display:grid;place-items:center;font-size:23px}nav{display:flex;gap:22px;align-items:center;font-size:.91rem;color:#52584f}nav a{text-decoration:none}nav a:hover{text-decoration:underline}.btn{border:0;border-radius:999px;background:var(--green);color:white;padding:12px 18px;font-weight:750;text-decoration:none;display:inline-flex;justify-content:center;align-items:center;gap:8px;cursor:pointer;transition:transform .18s}.btn:hover{transform:translateY(-2px)}.btn.light{background:white;color:var(--ink);border:1px solid var(--line)}.btn.lime{background:var(--lime);color:var(--ink)}.btn.small{padding:9px 13px;font-size:.88rem}.hero{display:grid;grid-template-columns:1.12fr .88fr;gap:54px;align-items:center;padding:76px 0 66px}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;font-weight:850;color:var(--green);display:flex;gap:8px;align-items:center}.eyebrow:before{content:"";height:2px;width:25px;background:var(--green)}h1{font-size:clamp(3.1rem,7vw,6.6rem);line-height:.94;letter-spacing:-.075em;margin:18px 0 24px;max-width:750px}h1 em{font-style:normal;color:var(--green)}.hero p{font-size:1.12rem;max-width:590px;color:#545b52}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.tiny{font-size:.8rem;color:var(--muted);margin-top:18px}.hero-art{min-height:410px;border-radius:34px;background:var(--green);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;color:white;padding:28px;isolation:isolate}.hero-art:before,.hero-art:after{content:"";position:absolute;border-radius:50%;z-index:-1}.hero-art:before{width:320px;height:320px;background:var(--lime);top:-100px;right:-70px}.hero-art:after{width:250px;height:250px;background:var(--orange);bottom:-100px;left:-60px}.paw-orbit{font-size:clamp(8rem,18vw,14rem);filter:grayscale(1) brightness(0) invert(1);line-height:1;transform:rotate(-12deg)}.art-note{position:absolute;bottom:23px;right:22px;background:var(--paper);color:var(--ink);border-radius:16px;padding:13px 16px;font-weight:800;max-width:190px;font-size:.92rem;box-shadow:var(--shadow)}.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#ffffff85}.stat{padding:20px 22px}.stat+.stat{border-left:1px solid var(--line)}.stat strong{display:block;font-size:1.05rem}.stat span{font-size:.83rem;color:var(--muted)}section{padding:66px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:25px}.section-head h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1;letter-spacing:-.06em;margin:8px 0 0}.section-head p{max-width:470px;color:var(--muted);margin:0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.filter{border:1px solid var(--line);background:transparent;border-radius:99px;padding:9px 15px;cursor:pointer;color:var(--muted);font-weight:700}.filter.active{background:var(--ink);color:white;border-color:var(--ink)}.animal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.animal-card{background:white;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}.animal-visual{height:190px;display:grid;place-items:center;font-size:5.8rem;background:linear-gradient(135deg,#e4eccf,#f5d7bd)}.animal-card:nth-child(3n+2) .animal-visual{background:linear-gradient(135deg,#d8e5e8,#ece9d2)}.animal-card:nth-child(3n) .animal-visual{background:linear-gradient(135deg,#f3d4b8,#ead7e7)}.animal-info{padding:20px;display:flex;flex-direction:column;flex:1}.tag{display:inline-flex;align-self:flex-start;background:#edf2e6;color:var(--green);font-size:.74rem;font-weight:800;border-radius:99px;padding:5px 9px}.animal-info h3{margin:10px 0 4px;font-size:1.35rem;letter-spacing:-.04em}.animal-info p{margin:0;color:var(--muted);font-size:.92rem}.animal-meta{display:flex;justify-content:space-between;gap:8px;margin:16px 0;color:var(--muted);font-size:.82rem}.animal-info .btn{margin-top:auto}.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:white}.panel.dark{background:var(--ink);color:white;border-color:var(--ink)}.panel h3{font-size:1.7rem;letter-spacing:-.05em;margin:10px 0}.panel p{color:var(--muted)}.panel.dark p{color:#c8cec4}.iconbubble{width:47px;height:47px;display:grid;place-items:center;border-radius:15px;background:var(--lime);font-size:1.5rem}.need-list{display:grid;gap:10px;margin:22px 0}.need{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.need span{color:var(--muted);font-size:.85rem}.status{font-size:.72rem;font-weight:800;border-radius:99px;background:#fff0df;color:#85491e;padding:5px 8px;white-space:nowrap}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{padding:20px;border:1px solid var(--line);border-radius:18px;background:#ffffff9c}.step-num{font-size:.8rem;font-weight:900;color:var(--green)}.step h3{margin:18px 0 7px;letter-spacing:-.035em}.step p{font-size:.9rem;color:var(--muted);margin:0}.manifesto{background:var(--lime);border-radius:30px;padding:clamp(28px,6vw,66px);display:grid;grid-template-columns:1fr .6fr;gap:30px;align-items:center}.manifesto h2{font-size:clamp(2.4rem,5vw,4.8rem);line-height:.98;letter-spacing:-.07em;margin:0}.manifesto p{max-width:420px}.manifesto-mark{font-size:8rem;text-align:center;line-height:1}.join{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}.join h2{font-size:clamp(2.4rem,5vw,4.2rem);line-height:.98;letter-spacing:-.07em;margin:10px 0}.join-copy p{color:var(--muted);max-width:400px}.form{display:grid;grid-template-columns:1fr 1fr;gap:13px;background:white;border:1px solid var(--line);border-radius:var(--radius);padding:23px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-weight:750;font-size:.84rem}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px;background:#fcfcfa;color:var(--ink)}.field textarea{min-height:95px;resize:vertical}.form .btn{grid-column:1/-1}.notice{font-size:.78rem;color:var(--muted);grid-column:1/-1;margin:0}footer{border-top:1px solid var(--line);padding:26px 0 34px;display:flex;justify-content:space-between;gap:20px;align-items:center;color:var(--muted);font-size:.85rem}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.footer-links a{text-decoration:none}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,150%);background:var(--ink);color:white;padding:14px 18px;border-radius:14px;box-shadow:var(--shadow);z-index:10;transition:transform .25s;max-width:calc(100% - 30px)}.toast.show{transform:translate(-50%,0)}.empty{padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}@media(max-width:850px){nav{display:none}.hero{grid-template-columns:1fr;gap:28px;padding-top:52px}.hero-art{min-height:300px}.animal-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.join{grid-template-columns:1fr}.manifesto{grid-template-columns:1fr}.manifesto-mark{display:none}}@media(max-width:560px){.wrap{width:min(100% - 26px,1160px)}.hero{padding:40px 0}.hero-art{min-height:260px}.stats{grid-template-columns:1fr}.stat+.stat{border-left:0;border-top:1px solid var(--line)}section{padding:46px 0}.section-head{align-items:start;flex-direction:column}.animal-grid,.split,.steps{grid-template-columns:1fr}.animal-visual{height:160px}.form{grid-template-columns:1fr;padding:17px}.field{grid-column:1/-1}.manifesto{border-radius:22px}footer{align-items:start;flex-direction:column}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
-</style></head>
+:root{
+  --paper:#fff7d6;--ink:#2b0a1d;--muted:#6b4455;--line:#f0dcb4;
+  --red:#e8112d;--pink:#ff2e93;--pink-soft:#ffb3d9;--yellow:#fff200;--amber:#ffb000;--orange:#ff6a1a;--water:#3ad8ff;
+  --display:"Arial Black","Archivo Black",Impact,system-ui,sans-serif;
+  --radius:22px;--pop:4px 4px 0 var(--ink);--pop-lg:8px 8px 0 var(--ink);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;overflow-x:hidden;
+  background:radial-gradient(#ff2e9328 2px,transparent 2.6px) 0 0/24px 24px,var(--paper)}
+a{color:inherit}
+button,input,select,textarea{font:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:900}
+.wrap{width:min(1160px,calc(100% - 36px));margin:auto}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:8px}
+.tt-wrap :focus-visible{outline-color:var(--yellow)}
+
+/* ---------- Botones ---------- */
+.btn{border:3px solid var(--ink);border-radius:999px;background:var(--red);color:#fff;padding:12px 20px;font-weight:800;text-decoration:none;display:inline-flex;justify-content:center;align-items:center;gap:8px;cursor:pointer;box-shadow:var(--pop);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn.light{background:#fff;color:var(--ink)}
+.btn.yel{background:var(--yellow);color:var(--ink)}
+.btn.pink{background:var(--pink);color:#fff}
+.btn.small{padding:9px 14px;font-size:.88rem}
+
+/* ---------- Topbar ---------- */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 0;border-bottom:3px solid var(--ink)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);letter-spacing:-.04em;font-size:1rem;line-height:1.05}
+.brandmark{width:46px;height:46px;border-radius:15px;background:var(--pink);border:3px solid var(--ink);display:grid;place-items:center;font-size:23px;box-shadow:3px 3px 0 var(--ink);transition:transform .3s}
+.brand:hover .brandmark{transform:rotate(-14deg) scale(1.08)}
+nav{display:flex;gap:20px;align-items:center;font-size:.92rem;font-weight:700}
+nav a{text-decoration:none;padding:4px 2px;background:linear-gradient(var(--pink),var(--pink)) 0 100%/0 40% no-repeat;transition:background-size .25s}
+nav a:hover{background-size:100% 40%}
+
+/* ---------- Hero ---------- */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:70px 0 56px}
+.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;font-weight:900;color:var(--red);display:flex;gap:8px;align-items:center}
+.eyebrow:before{content:"";height:4px;width:25px;background:var(--red);border-radius:2px}
+h1{font-size:clamp(2.3rem,5.4vw,4.9rem);line-height:1;letter-spacing:-.05em;margin:18px 0 22px}
+h1 .swap{display:inline-block;background:var(--yellow);border:3px solid var(--ink);border-radius:18px;padding:0 .18em .08em;transform:rotate(-2deg);box-shadow:var(--pop-lg);min-width:2.2em;transition:transform .2s}
+h1 .swap.bump{transform:rotate(2deg) scale(1.04)}
+.hero p.lead{font-size:1.1rem;max-width:580px;color:#5a2f43}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.tiny{font-size:.8rem;color:var(--muted);margin-top:16px}
+.hero-art{min-height:440px;border-radius:34px;background:var(--red);border:3px solid var(--ink);box-shadow:var(--pop-lg);position:relative;overflow:hidden;isolation:isolate;display:grid;place-items:center}
+.hero-art .blob{position:absolute;border-radius:50%;z-index:-1}
+.hero-art .b1{width:300px;height:300px;background:var(--yellow);top:-90px;right:-70px}
+.hero-art .b2{width:250px;height:250px;background:var(--pink);bottom:-90px;left:-60px}
+.hero-art .b3{width:130px;height:130px;background:var(--amber);top:38%;left:-40px}
+.hero-pet{background:none;border:0;padding:0;cursor:pointer;width:min(380px,86%);transition:transform .2s;filter:drop-shadow(6px 8px 0 #2b0a1d55)}
+.hero-pet:hover{transform:scale(1.04) rotate(-2deg)}
+.hero-pet:active{transform:scale(.96)}
+.hero-pet svg{display:block;width:100%;height:auto}
+.art-note{position:absolute;bottom:18px;right:16px;background:var(--yellow);border:3px solid var(--ink);border-radius:16px;padding:10px 14px;font-weight:850;max-width:215px;font-size:.86rem;box-shadow:var(--pop);transform:rotate(3deg)}
+.sticker{position:absolute;font-size:2.2rem;animation:floaty 5s ease-in-out infinite;pointer-events:none}
+.sticker.s1{top:10%;left:9%}.sticker.s2{top:14%;right:11%;animation-delay:-1.4s}.sticker.s3{bottom:26%;left:7%;animation-delay:-2.6s}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-16px) rotate(8deg)}}
+
+/* ---------- Marquee ---------- */
+.marquee{background:var(--ink);color:var(--yellow);overflow:hidden;border-block:3px solid var(--ink);white-space:nowrap;padding:12px 0;font-family:var(--display);letter-spacing:-.02em;font-size:1rem}
+.marquee-track{display:inline-block;animation:slide 30s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- Stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff;box-shadow:var(--pop);margin-top:44px}
+.stat{padding:20px 22px}
+.stat+.stat{border-left:3px solid var(--ink)}
+.stat:nth-child(2){background:var(--pink-soft)}
+.stat strong{display:block;font-size:1.05rem}
+.stat span{font-size:.83rem;color:var(--muted)}
+
+/* ---------- Secciones ---------- */
+section{padding:66px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:26px}
+.section-head h2{font-size:clamp(1.8rem,3.6vw,3.1rem);line-height:1.02;letter-spacing:-.05em;margin:8px 0 0}
+.section-head p{max-width:470px;color:var(--muted);margin:0}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- TikTok ---------- */
+.tt-wrap{background:var(--ink);color:#fff;border-block:3px solid var(--ink);padding:66px 0;margin-top:66px;
+  background-image:radial-gradient(#ff2e9344 2px,transparent 2.6px);background-size:26px 26px}
+.tt-layout{display:grid;grid-template-columns:1fr auto auto;gap:34px;align-items:center}
+.tt-copy .eyebrow{color:var(--yellow)}
+.tt-copy .eyebrow:before{background:var(--yellow)}
+.tt-copy h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1;letter-spacing:-.05em;margin:10px 0 14px;color:var(--pink)}
+.tt-copy h2 em{font-style:normal;color:var(--yellow)}
+.tt-copy p{color:#f5d9e6;max-width:430px}
+.tt-copy .tiny{color:#d9aec4}
+.ttform{display:grid;gap:10px;margin-top:22px;max-width:430px}
+.ttform label{font-weight:800;font-size:.85rem;color:var(--yellow)}
+.ttrow{display:flex;gap:8px;flex-wrap:wrap}
+.ttrow input{flex:1;min-width:180px;border:3px solid var(--yellow);border-radius:12px;padding:11px;background:#fff;color:var(--ink)}
+.tterr{color:var(--yellow);font-weight:750;font-size:.84rem;min-height:1.2em;margin:0}
+.ttlist{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px}
+.ttitem{position:relative}
+.ttitem .tdel{display:block;margin:6px 0 0;background:none;border:0;color:var(--yellow);text-decoration:underline;cursor:pointer;font-size:.8rem}
+.tt-ctrl{display:grid;gap:12px}
+.cbtn{width:54px;height:54px;border-radius:50%;border:3px solid #fff;background:var(--pink);color:#fff;font-size:1.3rem;cursor:pointer;box-shadow:4px 4px 0 var(--red);transition:transform .15s}
+.cbtn:hover{transform:scale(1.1)}
+.cbtn:active{transform:scale(.92)}
+
+.phone{position:relative;width:min(340px,84vw);height:min(620px,calc(84vw*16/9));border:5px solid #fff;border-radius:40px;overflow:hidden;background:#000;
+  box-shadow:0 0 0 4px var(--pink),12px 12px 0 4px var(--red)}
+.feed{height:100%;overflow-y:scroll;scroll-snap-type:y mandatory;scrollbar-width:none;overscroll-behavior:contain}
+.feed::-webkit-scrollbar{display:none}
+.slide{height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative;overflow:hidden}
+.stage{position:absolute;inset:0;display:grid;place-items:center;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.stage svg{width:104%;height:auto;margin-top:-6%}
+.stage .clip-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.stage .photo-vignette{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,#0002 0%,transparent 38%,#0005 100%)}
+
+.confetti-bg{position:absolute;inset:0;pointer-events:none}
+.confetti-bg span{position:absolute;font-size:1.6rem;animation:floaty 4.5s ease-in-out infinite}
+.shade{position:absolute;inset:auto 0 0 0;height:48%;background:linear-gradient(transparent,#2b0a1de6);pointer-events:none}
+.topline{position:absolute;top:0;left:0;right:0;z-index:5;padding:16px 16px 0;display:flex;justify-content:center;color:#fff;font-weight:900;font-size:.9rem;text-shadow:0 1px 4px #0009;pointer-events:none}
+.topline .counter{position:absolute;right:16px;top:17px;font-size:.74rem;background:#2b0a1d88;border-radius:99px;padding:1px 8px}
+.rail{position:absolute;right:10px;bottom:70px;display:grid;gap:14px;justify-items:center;z-index:3}
+.rbtn{background:none;border:0;color:#fff;display:grid;justify-items:center;gap:2px;cursor:pointer;font-size:.72rem;font-weight:800;text-shadow:0 1px 3px #000a;padding:0}
+.rbtn .ic{width:46px;height:46px;border-radius:50%;background:#2b0a1d99;border:2px solid #fff;display:grid;place-items:center;font-size:1.35rem;transition:transform .15s,background .15s}
+.rbtn:hover .ic{transform:scale(1.1)}
+.rbtn.on .ic{background:var(--red);animation:beat .4s}
+@keyframes beat{40%{transform:scale(1.3)}}
+.avatar{position:relative;margin-bottom:8px}
+.avatar .ic{background:var(--yellow);color:var(--ink);font-weight:900;font-size:1.15rem}
+.avatar .plus{position:absolute;bottom:-9px;left:50%;transform:translateX(-50%);width:22px;height:22px;border-radius:50%;background:var(--red);border:2px solid #fff;color:#fff;font-size:.95rem;display:grid;place-items:center;line-height:1}
+.avatar.on .plus{background:#fff;color:var(--red)}
+.disc{width:42px;height:42px;border-radius:50%;background:conic-gradient(var(--pink),var(--yellow),var(--amber),var(--red),var(--pink));border:7px solid #2b0a1d;animation:spin 4s linear infinite;box-shadow:0 0 0 2px #fff}
+@keyframes spin{to{transform:rotate(360deg)}}
+.meta{position:absolute;left:14px;right:76px;bottom:20px;color:#fff;text-shadow:0 1px 4px #000b;z-index:3;pointer-events:none}
+.meta b{display:block;font-size:1rem}
+.meta p{margin:4px 0 8px;font-size:.86rem;line-height:1.35}
+.sound{font-size:.76rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.prog{position:absolute;left:0;right:0;bottom:0;height:5px;background:#ffffff44;z-index:6}
+.prog i{display:block;height:100%;width:0;background:var(--yellow)}
+.pauseicon{position:absolute;inset:0;display:grid;place-items:center;font-size:4rem;color:#fff;opacity:0;pointer-events:none;z-index:4;text-shadow:0 2px 12px #000a;transition:opacity .2s}
+.phone.paused .pauseicon{opacity:.9}
+.phone.paused .pz *,.slide:not(.on) .pz *{animation-play-state:paused!important}
+.sheet{position:absolute;left:0;right:0;bottom:0;height:64%;background:#fff;color:var(--ink);border-radius:22px 22px 0 0;z-index:8;transform:translateY(105%);transition:transform .3s;display:flex;flex-direction:column;border-top:3px solid var(--ink)}
+.sheet.open{transform:none}
+.sheet-h{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;font-weight:900;border-bottom:2px dashed var(--line)}
+.sheet-h button{border:0;background:var(--pink-soft);border-radius:50%;width:30px;height:30px;cursor:pointer;font-weight:900}
+.clist{list-style:none;margin:0;padding:8px 16px;overflow:auto;flex:1;display:grid;gap:12px;align-content:start}
+.clist li{display:flex;gap:10px;font-size:.85rem}
+.clist .av{flex:none;width:30px;height:30px;border-radius:50%;background:var(--amber);border:2px solid var(--ink);display:grid;place-items:center;font-weight:900;font-size:.8rem}
+.clist b{display:block;font-size:.78rem;color:var(--muted)}
+.cform{display:flex;gap:8px;padding:10px 12px;border-top:2px dashed var(--line)}
+.cform input{flex:1;min-width:0;border:2px solid var(--ink);border-radius:99px;padding:8px 12px}
+.cform button{border:2px solid var(--ink);background:var(--red);color:#fff;border-radius:99px;padding:0 14px;font-weight:800;cursor:pointer}
+.sheet-note{font-size:.7rem;color:var(--muted);padding:0 16px 6px;margin:0}
+
+/* ---------- Muro ---------- */
+.wall-wrap{background:var(--pink);border-block:3px solid var(--ink);padding:66px 0;margin-top:0;
+  background-image:radial-gradient(#ffffff55 2px,transparent 2.6px);background-size:22px 22px}
+.wall-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px;align-items:start}
+.upload{background:#fff;border:3px solid var(--ink);border-radius:var(--radius);box-shadow:var(--pop-lg);padding:22px;position:sticky;top:16px}
+.upload h3{margin:0 0 14px;font-size:1.4rem;letter-spacing:-.04em}
+.drop{border:3px dashed var(--ink);border-radius:18px;background:var(--paper);min-height:210px;display:grid;place-items:center;text-align:center;cursor:pointer;overflow:hidden;position:relative;transition:background .2s,transform .2s;padding:14px}
+.drop:hover,.drop.over{background:var(--yellow);transform:rotate(-1deg)}
+.drop strong{display:block;font-size:1.05rem}
+.drop span{font-size:.82rem;color:var(--muted)}
+.drop .big{font-size:3rem;display:block;margin-bottom:4px}
+.drop img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.drop input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.sample{margin-top:10px;width:100%}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.field{display:grid;gap:5px}
+.field.full{grid-column:1/-1}
+.field label,.field .lab{font-weight:800;font-size:.84rem}
+.field input[type=text],.field input[type=url],.field select,.field textarea{width:100%;border:2px solid var(--ink);border-radius:12px;padding:11px;background:#fffdf4;color:var(--ink)}
+.field textarea{min-height:78px;resize:vertical}
+.count{font-size:.72rem;color:var(--muted);text-align:right}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{border:2px solid var(--ink);background:#fff;border-radius:99px;padding:6px 11px;font-size:.82rem;font-weight:750;cursor:pointer;transition:transform .12s,background .12s}
+.chip:hover{transform:translateY(-2px)}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--yellow)}
+.chip:disabled{opacity:.4;cursor:not-allowed}
+.upload .btn.pub{width:100%;margin-top:16px}
+.formmsg{font-size:.78rem;color:var(--muted);margin:12px 0 0}
+.formerr{color:#b0102a;font-weight:750;font-size:.84rem;margin:10px 0 0;min-height:1.2em}
+
+.wall-tools{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.wall-count{font-weight:850;background:var(--yellow);border:3px solid var(--ink);border-radius:99px;padding:6px 14px;box-shadow:3px 3px 0 var(--ink)}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filter{border:2px solid var(--ink);background:#fff;border-radius:99px;padding:8px 14px;cursor:pointer;color:var(--ink);font-weight:750}
+.filter.active{background:var(--ink);color:var(--yellow)}
+.polaroids{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.polaroid{background:#fff;border:3px solid var(--ink);border-radius:8px;padding:12px 12px 16px;box-shadow:var(--pop);transform:rotate(var(--r,0deg));transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column;animation:pop .45s backwards}
+.polaroid:hover{transform:rotate(0) translateY(-6px) scale(1.02);box-shadow:var(--pop-lg);z-index:2}
+@keyframes pop{from{opacity:0;transform:scale(.7) rotate(-8deg)}}
+.photo{aspect-ratio:1/1;border:3px solid var(--ink);border-radius:4px;overflow:hidden;display:grid;place-items:center;font-size:5.4rem;background:linear-gradient(135deg,#ffe58a,#ffb3d9);position:relative}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.badge-ej{position:absolute;top:8px;left:8px;background:var(--yellow);border:2px solid var(--ink);border-radius:99px;font-size:.66rem;font-weight:900;padding:2px 8px;letter-spacing:.04em}
+.pbody{padding:12px 4px 0;display:flex;flex-direction:column;gap:8px;flex:1}
+.pname{font-size:1.25rem;letter-spacing:-.04em;margin:0;line-height:1.1}
+.pkind{font-size:.78rem;color:var(--muted);font-weight:650}
+.ptraits{display:flex;flex-wrap:wrap;gap:5px}
+.ptraits span{background:var(--amber);border:2px solid var(--ink);border-radius:99px;font-size:.7rem;font-weight:800;padding:1px 8px}
+.pq{font-size:.88rem;margin:0}
+.pq b{font-weight:850}
+.pfoot{margin-top:auto;padding-top:8px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.drops{border:2px solid var(--ink);background:#fff;border-radius:99px;padding:6px 12px;font-weight:850;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:transform .12s,background .15s}
+.drops:hover{transform:scale(1.07)}
+.drops[aria-pressed=true]{background:var(--water)}
+.drops.splash{animation:splash .4s}
+@keyframes splash{40%{transform:scale(1.25) rotate(-6deg)}}
+.del{border:0;background:none;font-size:.78rem;color:var(--muted);text-decoration:underline;cursor:pointer;padding:4px}
+.del:hover{color:var(--red)}
+.walnote{font-size:.78rem;margin:14px 0 0;color:#5a1636;font-weight:600}
+
+/* ---------- Juego del bowl ---------- */
+.game{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;background:var(--yellow);border:3px solid var(--ink);border-radius:30px;box-shadow:var(--pop-lg);padding:clamp(24px,5vw,48px)}
+.game h2{font-size:clamp(1.8rem,3.6vw,3rem);letter-spacing:-.05em;line-height:1.02;margin:8px 0 10px}
+.game p{max-width:420px}
+.bowl-stage{display:grid;place-items:center;gap:12px}
+.bowl{width:min(280px,70vw);height:170px;border:4px solid var(--ink);border-radius:0 0 140px 140px / 0 0 170px 170px;background:#fff;position:relative;overflow:hidden;cursor:pointer;box-shadow:var(--pop);transition:transform .12s;padding:0}
+.bowl:active{transform:scale(.96)}
+.water{position:absolute;left:0;right:0;bottom:0;height:0%;background:linear-gradient(#6fe5ff,#1fb4e6);transition:height .35s cubic-bezier(.3,1.6,.5,1)}
+.water:before{content:"";position:absolute;left:-10%;right:-10%;top:-9px;height:18px;background:#6fe5ff;border-radius:50%;animation:wave 2.2s ease-in-out infinite}
+@keyframes wave{50%{transform:translateX(7%) scaleY(1.2)}}
+.bowl-label{position:absolute;inset:0;display:grid;place-items:center;font-weight:900;font-size:1.05rem;pointer-events:none;text-shadow:0 2px 0 #fff}
+.game-score{font-weight:850}
+.game-score small{display:block;font-weight:600;color:#6b4a20}
+
+/* ---------- Animales demo ---------- */
+.animal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.animal-card{background:#fff;border:3px solid var(--ink);border-radius:var(--radius);overflow:hidden;box-shadow:var(--pop);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.animal-card:hover{transform:translate(-3px,-3px);box-shadow:7px 7px 0 var(--ink)}
+.animal-visual{aspect-ratio:300/320;border-bottom:3px solid var(--ink);overflow:hidden}
+.animal-visual img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.animal-card:hover .animal-visual img{transform:scale(1.07)}
+.animal-info{padding:18px;display:flex;flex-direction:column;flex:1}
+.tag{display:inline-flex;align-self:flex-start;background:var(--amber);border:2px solid var(--ink);color:var(--ink);font-size:.72rem;font-weight:850;border-radius:99px;padding:3px 9px}
+.animal-info h3{margin:10px 0 4px;font-size:1.25rem;letter-spacing:-.04em}
+.animal-info p{margin:0;color:var(--muted);font-size:.92rem}
+.animal-meta{display:flex;justify-content:space-between;gap:8px;margin:14px 0;color:var(--muted);font-size:.82rem}
+.animal-info .btn{margin-top:auto}
+.empty{padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}
+
+/* ---------- Ayudar ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{border:3px solid var(--ink);border-radius:var(--radius);padding:28px;background:#fff;box-shadow:var(--pop)}
+.panel.dark{background:var(--ink);color:#fff}
+.panel h3{font-size:1.5rem;letter-spacing:-.04em;margin:12px 0}
+.panel p{color:var(--muted)}
+.panel.dark p{color:#f0cfdf}
+.iconbubble{width:50px;height:50px;display:grid;place-items:center;border-radius:15px;background:var(--yellow);border:3px solid var(--ink);font-size:1.5rem}
+.need-list{display:grid;gap:4px;margin:20px 0}
+.need{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:2px dashed var(--line)}
+.need span{color:var(--muted);font-size:.85rem}
+.status{font-size:.72rem;font-weight:850;border-radius:99px;background:var(--yellow);border:2px solid var(--ink);color:var(--ink);padding:3px 9px;white-space:nowrap}
+
+/* ---------- Convivencia ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{padding:20px;border:3px solid var(--ink);border-radius:18px;background:#fff;box-shadow:var(--pop);transition:transform .2s,background .2s}
+.step:hover{transform:translateY(-6px) rotate(-1deg);background:var(--pink-soft)}
+.step-num{font-size:.8rem;font-weight:900;color:var(--red)}
+.step h3{margin:16px 0 7px;letter-spacing:-.03em;font-size:1.1rem}
+.step p{font-size:.9rem;color:var(--muted);margin:0}
+.step:hover p{color:var(--ink)}
+
+/* ---------- Manifiesto ---------- */
+.manifesto{background:var(--amber);border:3px solid var(--ink);box-shadow:var(--pop-lg);border-radius:30px;padding:clamp(28px,6vw,66px);display:grid;grid-template-columns:1fr .6fr;gap:30px;align-items:center}
+.manifesto h2{font-size:clamp(2rem,4.4vw,4rem);line-height:1;letter-spacing:-.05em;margin:0 0 16px}
+.manifesto p{max-width:430px}
+.manifesto-mark{font-size:7rem;text-align:center;line-height:1}
+.manifesto-mark span{display:inline-block;animation:floaty 4s ease-in-out infinite}
+.manifesto-mark span+span{animation-delay:-1.8s}
+
+/* ---------- Sumate ---------- */
+.join{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+.join h2{font-size:clamp(2rem,4.4vw,3.6rem);line-height:1;letter-spacing:-.05em;margin:10px 0}
+.join-copy p{color:var(--muted);max-width:400px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:13px;background:#fff;border:3px solid var(--ink);box-shadow:var(--pop);border-radius:var(--radius);padding:23px}
+.form .btn{grid-column:1/-1}
+.notice{font-size:.78rem;color:var(--muted);grid-column:1/-1;margin:0}
+
+footer{border-top:3px solid var(--ink);padding:26px 0 34px;display:flex;justify-content:space-between;gap:20px;align-items:center;color:var(--muted);font-size:.85rem}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap}
+.footer-links a{text-decoration:none}
+.footer-links a:hover{text-decoration:underline}
+
+/* ---------- Extras ---------- */
+.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,160%);background:var(--ink);color:var(--yellow);padding:14px 18px;border-radius:14px;box-shadow:var(--pop);z-index:50;transition:transform .25s;max-width:calc(100% - 30px);font-weight:650;border:2px solid var(--yellow)}
+.toast.show{transform:translate(-50%,0)}
+.fx{position:fixed;pointer-events:none;z-index:60;font-size:1.6rem;will-change:transform,opacity;left:0;top:0}
+.trail{position:fixed;pointer-events:none;z-index:40;font-size:1rem;left:0;top:0;animation:trail .9s forwards}
+@keyframes trail{from{opacity:.8;transform:translate(var(--x),var(--y)) scale(1) rotate(var(--rot))}to{opacity:0;transform:translate(var(--x),calc(var(--y) + 24px)) scale(.4) rotate(var(--rot))}}
+
+@media(max-width:1000px){
+  .tt-layout{grid-template-columns:1fr auto;}
+  .tt-copy{grid-column:1/-1}
+}
+@media(max-width:900px){
+  nav{display:none}
+  .hero{grid-template-columns:1fr;gap:28px;padding-top:44px}
+  .hero-art{min-height:340px}
+  .wall-layout{grid-template-columns:1fr}
+  .upload{position:static}
+  .animal-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .join,.manifesto,.game{grid-template-columns:1fr}
+  .manifesto-mark{display:none}
+}
+@media(max-width:600px){
+  .wrap{width:min(100% - 26px,1160px)}
+  .stats{grid-template-columns:1fr}
+  .stat+.stat{border-left:0;border-top:3px solid var(--ink)}
+  section{padding:46px 0}
+  .wall-wrap,.tt-wrap{padding:46px 0}
+  .section-head{align-items:start;flex-direction:column}
+  .animal-grid,.split,.steps,.polaroids{grid-template-columns:1fr}
+  .fgrid,.form{grid-template-columns:1fr}
+  .tt-layout{grid-template-columns:1fr;justify-items:center}
+  .tt-ctrl{display:flex}
+  footer{align-items:start;flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
 <body>
-<header class="wrap topbar"><a class="brand" href="#" aria-label="Manada Abierta, inicio"><span class="brandmark">🐾</span><span>MANADA<br>ABIERTA</span></a><nav aria-label="Navegación principal"><a href="#adopciones">Adopciones</a><a href="#ayudar">Ayudar</a><a href="#convivencia">Convivencia</a><a href="#proyecto">El proyecto</a></nav><a class="btn small" href="#sumate">Sumarme ↗</a></header>
+
+<header class="wrap topbar">
+  <a class="brand" href="#" aria-label="Manada Abierta, inicio"><span class="brandmark">🐾</span><span>MANADA<br>ABIERTA</span></a>
+  <nav aria-label="Navegación principal">
+    <a href="#tiktok">Clips tiernos</a>
+    <a href="#muro">Muro de sedientos</a>
+    <a href="#adopciones">Adopciones</a>
+    <a href="#ayudar">Ayudar</a>
+    <a href="#convivencia">Convivencia</a>
+  </nav>
+  <a class="btn small" href="#muro">Subir mi mascota 💧</a>
+</header>
+
 <main>
-<section class="wrap hero"><div><div class="eyebrow">Una comunidad abierta a todos</div><h1>Una manada.<br><em>Un montón</em><br>de formas de ayudar.</h1><p>Conectamos perros, gatos y personas para que las adopciones sean más fáciles, la ayuda llegue más lejos y podamos convivir con más cuidado.</p><div class="actions"><a class="btn" href="#adopciones">Encontrar compañero →</a><a class="btn light" href="#ayudar">Quiero ayudar</a></div><p class="tiny">Proyecto comunitario abierto · Argentina · En construcción, con los pies en la tierra.</p></div><div class="hero-art" role="img" aria-label="Símbolo gráfico de una comunidad animal"><div class="paw-orbit" aria-hidden="true">🐾</div><div class="art-note">No hace falta hacer todo. Hace falta sumar algo.</div></div></section>
-<div class="wrap stats"><div class="stat"><strong>Red abierta</strong><span>Personas, refugios y profesionales</span></div><div class="stat"><strong>Transparencia primero</strong><span>Casos y aportes con seguimiento</span></div><div class="stat"><strong>De todos</strong><span>Colaboración sin protagonismos</span></div></div>
-<section class="wrap" id="adopciones"><div class="section-head"><div><div class="eyebrow">Adoptar</div><h2>Buscan una familia.<br>¿Hacemos match?</h2></div><p>Perfiles de demostración para mostrar cómo podría funcionar el catálogo. En una versión real, cada publicación será revisada con quien tenga al animal a cargo.</p></div><div class="filters" role="group" aria-label="Filtrar animales"><button class="filter active" data-filter="todos" aria-pressed="true">Todos</button><button class="filter" data-filter="perro" aria-pressed="false">Perros</button><button class="filter" data-filter="gato" aria-pressed="false">Gatos</button><button class="filter" data-filter="especial" aria-pressed="false">Necesitan cuidados</button></div><div class="animal-grid" id="animalGrid" aria-live="polite"></div><p class="tiny">Los perfiles son ficticios y sirven únicamente para la demostración. No representan animales disponibles para adopción.</p></section>
-<section class="wrap" id="ayudar"><div class="section-head"><div><div class="eyebrow">Ayudar</div><h2>Hay muchas formas<br>de cambiar una historia.</h2></div><p>La ayuda no siempre es dinero. Puede ser un traslado, una difusión, una consulta profesional, alimento o un rato de compañía.</p></div><div class="split"><article class="panel"><div class="iconbubble">🩺</div><h3>Una mano para cada caso</h3><p>Campañas para tratamientos, castraciones, cirugías y rehabilitación, con presupuesto, responsable y comprobantes antes de solicitar aportes reales.</p><a href="#sumate" class="btn light">Ofrecer ayuda ↗</a></article><article class="panel dark"><div class="iconbubble">🦽</div><h3>Ideas que devuelven movimiento</h3><p>Conectar personas que diseñan y fabrican sillas de ruedas, hogares de tránsito y soluciones accesibles para animales con movilidad reducida.</p><a href="#sumate" class="btn lime">Sumar una habilidad ↗</a></article></div><div class="panel" style="margin-top:16px"><div class="eyebrow">Ejemplo de campaña · Datos ilustrativos</div><h3>Un fondo transparente, de principio a fin.</h3><div class="need-list"><div class="need"><div><strong>1. Presupuesto veterinario</strong><br><span>Profesional y alcance del tratamiento</span></div><span class="status">A validar</span></div><div class="need"><div><strong>2. Aportes recibidos</strong><br><span>Registro público con privacidad protegida</span></div><span class="status">Sin recaudar</span></div><div class="need"><div><strong>3. Gastos y comprobantes</strong><br><span>Rendición y actualización del caso</span></div><span class="status">Pendiente</span></div></div><p class="tiny">Esta demo no cobra ni recibe donaciones. No transfieras dinero a partir de esta página.</p></div></section>
-<section class="wrap" id="convivencia"><div class="section-head"><div><div class="eyebrow">Convivencia responsable</div><h2>Cuidar también<br>es prevenir.</h2></div><p>La seguridad de chicos, perros, gatos y vecinos se construye con responsabilidad, evaluación individual y ayuda temprana.</p></div><div class="steps"><article class="step"><div class="step-num">01 / IDENTIFICAR</div><h3>Que puedan volver a casa</h3><p>Chapita, identificación, datos actualizados y prevención de escapes.</p></article><article class="step"><div class="step-num">02 / PREVENIR</div><h3>Evitar riesgos</h3><p>Correas, cercos seguros, supervisión y espacios adecuados.</p></article><article class="step"><div class="step-num">03 / PEDIR AYUDA</div><h3>Actuar a tiempo</h3><p>Ante incidentes, documentar hechos y contactar profesionales o autoridades locales.</p></article><article class="step"><div class="step-num">04 / ACOMPAÑAR</div><h3>Evaluar cada caso</h3><p>Las decisiones deben basarse en conducta y contexto, no solo en raza o apariencia.</p></article></div></section>
-<section class="wrap" id="proyecto"><div class="manifesto"><div><div class="eyebrow">Nuestra idea</div><h2>La manada está abierta. La ayuda también.</h2><p>Creemos que mucha gente quiere hacer algo bueno, pero no siempre sabe por dónde empezar. Queremos conectar esas ganas con necesidades concretas, información clara y herramientas que cualquiera pueda mejorar.</p><a class="btn" href="#sumate">Construirlo entre todos ↗</a></div><div class="manifesto-mark" aria-hidden="true">🐕<br>🐈</div></div></section>
-<section class="wrap join" id="sumate"><div class="join-copy"><div class="eyebrow">Sumate al proyecto</div><h2>Una idea abierta necesita más manos.</h2><p>¿Sos rescatista, veterinario/a, programador/a, diseñador/a, tenés un refugio o simplemente querés ayudar? Contanos qué te gustaría aportar.</p><p class="tiny">Este formulario es una demostración local. No envía ni almacena información personal.</p></div><form class="form" id="joinForm"><div class="field"><label for="name">Nombre o alias</label><input id="name" name="name" required maxlength="70" placeholder="¿Cómo te llamamos?"></div><div class="field"><label for="role">Quiero participar como</label><select id="role" name="role" required><option value="">Elegí una opción</option><option>Voluntario/a</option><option>Rescatista o refugio</option><option>Veterinario/a</option><option>Programador/a</option><option>Diseñador/a</option><option>Proveedor/a o donante</option><option>Otro aporte</option></select></div><div class="field full"><label for="city">Ciudad / provincia (opcional)</label><input id="city" name="city" maxlength="90" placeholder="Ej.: Junín de los Andes, Neuquén"></div><div class="field full"><label for="idea">¿Qué te gustaría aportar?</label><textarea id="idea" name="idea" required maxlength="600" placeholder="Una habilidad, una idea, un problema que viste…"></textarea></div><button class="btn" type="submit">Probar envío →</button><p class="notice">Demo sin backend: al enviar, solo verás un mensaje en esta página.</p></form></section>
-</main><footer class="wrap"><a class="brand" href="#"><span class="brandmark">🐾</span><span>MANADA ABIERTA</span></a><div>Proyecto abierto · Argentina · 2026</div><div class="footer-links"><a href="README.md">Documentación</a><a href="CONTRIBUTING.md">Cómo colaborar</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></div></footer><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<section class="wrap hero" style="padding-bottom:56px">
+  <div>
+    <div class="eyebrow">Una comunidad abierta a todos</div>
+    <h1>Una manada.<br>Un montón de <span class="swap" id="swap">sorbos</span> para ayudar.</h1>
+    <p class="lead">Conectamos perros, gatos y personas para que las adopciones sean más fáciles, la ayuda llegue más lejos y podamos convivir con más cuidado. Y además: clips para explotar de ternura y un muro donde mostrar a tu mascota tomando agua.</p>
+    <div class="actions">
+      <a class="btn" href="#tiktok">Ver clips tiernos 🎬</a>
+      <a class="btn yel" href="#muro">Subir mi mascota 📸</a>
+      <a class="btn light" href="#adopciones">Encontrar compañero →</a>
+    </div>
+    <p class="tiny">Proyecto comunitario abierto · Argentina · En construcción, con los pies en la tierra.</p>
+  </div>
+  <div class="hero-art" role="group" aria-label="Ilustración interactiva">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <span class="sticker s1" aria-hidden="true">💖</span><span class="sticker s2" aria-hidden="true">✨</span><span class="sticker s3" aria-hidden="true">🐟</span>
+    <button class="hero-pet" id="heroPet" type="button" aria-label="Acariciar al perrito"></button>
+    <div class="art-note">Acariciá al corgi. Dale, no muerde. 💧</div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><strong>Red abierta</strong><span>Personas, refugios y profesionales</span></div>
+    <div class="stat"><strong>Transparencia primero</strong><span>Casos y aportes con seguimiento</span></div>
+    <div class="stat"><strong>De todos</strong><span>Colaboración sin protagonismos</span></div>
+  </div>
+</div>
+
+<!-- ===================== TIKTOK ===================== -->
+<div class="tt-wrap" id="tiktok">
+  <div class="wrap tt-layout">
+    <div class="tt-copy reveal">
+      <div class="eyebrow">Clips de la manada</div>
+      <h2>Ternura en <em>modo scroll</em>. 🎬</h2>
+      <p>Deslizá hacia arriba, tocá dos veces para dar corazón, comentá y seguí a tus favoritos. Deslizá por una colección ampliada de fotos de cachorritos y gatitos bebés. También podés pegar links de TikTok reales para incrustar videos.</p>
+      <form class="ttform" id="ttForm" novalidate>
+        <label for="ttUrl">Agregá un TikTok real</label>
+        <div class="ttrow">
+          <input type="url" id="ttUrl" placeholder="https://www.tiktok.com/@usuario/video/1234567890123456789" autocomplete="off">
+          <button class="btn yel small" type="submit">Agregar 🎥</button>
+        </div>
+        <p class="tterr" id="ttErr" role="alert"></p>
+      </form>
+      <div class="ttlist" id="ttList"></div>
+      <p class="tiny">Pegá el link largo (el que tiene /video/ y un número). Recién al agregar uno se carga contenido de TikTok; los clips de prueba no conectan con nada externo. Los links quedan guardados solo en tu navegador. Las fotos son de muestra y se cargan desde Unsplash.</p>
+    </div>
+
+    <div class="phone" id="phone" aria-label="Feed de clips de mascotas">
+      <div class="topline"><span>Para ti 🐾</span><span class="counter" id="counter">1/10</span></div>
+      <div class="feed" id="feed" tabindex="0" aria-label="Clips. Usá las flechas arriba y abajo para cambiar."></div>
+      <div class="pauseicon" aria-hidden="true">▶</div>
+      <div class="prog" aria-hidden="true"><i id="prog"></i></div>
+      <div class="sheet" id="sheet" role="dialog" aria-label="Comentarios" aria-hidden="true">
+        <div class="sheet-h"><span id="sheetTitle">Comentarios</span><button type="button" id="sheetClose" aria-label="Cerrar comentarios">✕</button></div>
+        <ul class="clist" id="clist"></ul>
+        <p class="sheet-note">Comentarios de ejemplo. Los tuyos solo se ven mientras la página está abierta.</p>
+        <form class="cform" id="cform"><input type="text" id="cinput" maxlength="120" placeholder="Agregá un comentario…" aria-label="Escribí un comentario"><button type="submit">Enviar</button></form>
+      </div>
+    </div>
+
+    <div class="tt-ctrl">
+      <button class="cbtn" id="btnUp" type="button" aria-label="Clip anterior">▲</button>
+      <button class="cbtn" id="btnPlay" type="button" aria-label="Pausar o reanudar">⏯</button>
+      <button class="cbtn" id="btnDown" type="button" aria-label="Clip siguiente">▼</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== MURO ===================== -->
+<div class="wall-wrap" id="muro">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="eyebrow" style="color:var(--ink)">El muro de sedientos</div><h2>Mostranos a tu mascota<br>tomando agua. 💧</h2></div>
+      <p style="color:#5a1636">Subí una foto, contá cómo es y qué le encanta hacer. Dale una gotita 💧 a las que más te gusten. Es un muro de demostración: lo que subís queda guardado solo en tu navegador.</p>
+    </div>
+
+    <div class="wall-layout">
+      <form class="upload reveal" id="petForm" novalidate>
+        <h3>Sumá a tu mascota</h3>
+        <div class="drop" id="drop">
+          <div id="dropHint"><span class="big">📸</span><strong>Arrastrá una foto o tocá acá</strong><span>JPG, PNG o WebP · idealmente tomando agua</span></div>
+          <img id="preview" alt="Vista previa de la imagen elegida" hidden>
+          <input type="file" id="file" accept="image/*" aria-label="Elegir foto de la mascota">
+        </div>
+        <button class="btn light small sample" type="button" id="sample">🎲 Usar una imagen de prueba</button>
+        <div class="fgrid">
+          <div class="field"><label for="pname">Nombre</label><input type="text" id="pname" maxlength="30" placeholder="Ej.: Firulais" required></div>
+          <div class="field"><label for="pkind">Es un/a</label>
+            <select id="pkind"><option value="perro">Perro 🐶</option><option value="gato">Gato 🐱</option><option value="otro">Otro bichito 🐾</option></select></div>
+          <div class="field full"><span class="lab" id="traitsLab">Su personalidad (hasta 3)</span>
+            <div class="chips" id="chips" role="group" aria-labelledby="traitsLab"></div></div>
+          <div class="field full"><label for="ppers">Contá cómo es</label><textarea id="ppers" maxlength="140" placeholder="Ej.: Tiene miedo al secador pero ataca al aspirador sin piedad."></textarea><div class="count"><span id="c1">0</span>/140</div></div>
+          <div class="field full"><label for="plike">Lo que más le gusta hacer</label><input type="text" id="plike" maxlength="70" placeholder="Ej.: Robar medias y esconderlas"></div>
+        </div>
+        <p class="formerr" id="formerr" role="alert"></p>
+        <button class="btn pub" type="submit">Publicar en el muro 💧</button>
+        <p class="formmsg">Sin cuenta ni servidor: tu publicación se guarda únicamente en este navegador. Subí solo fotos tuyas o con permiso. No incluyas datos personales.</p>
+      </form>
+
+      <div class="reveal">
+        <div class="wall-tools">
+          <span class="wall-count" id="wallCount" aria-live="polite"></span>
+          <div class="filters" role="group" aria-label="Filtrar muro">
+            <button class="filter active" data-wf="todos" aria-pressed="true" type="button">Todos</button>
+            <button class="filter" data-wf="perro" aria-pressed="false" type="button">Perros</button>
+            <button class="filter" data-wf="gato" aria-pressed="false" type="button">Gatos</button>
+            <button class="filter" data-wf="mias" aria-pressed="false" type="button">Mis fotos</button>
+          </div>
+        </div>
+        <div class="polaroids" id="wall" aria-live="polite"></div>
+        <p class="walnote">Las mascotas marcadas como EJEMPLO son ilustraciones de prueba, no fotos reales.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== JUEGO ===================== -->
+<section class="wrap">
+  <div class="game reveal">
+    <div>
+      <div class="eyebrow" style="color:var(--ink)">Minijuego</div>
+      <h2>Llená el bowl.<br>Ninguna mascota sin agua.</h2>
+      <p>Cada toque suma una gota. Con 15, el bowl se llena y se arma la fiesta. Un recordatorio simple y cierto: el agua fresca tiene que estar siempre disponible. 💙</p>
+      <p class="game-score">Bowls llenos: <span id="bowlsFull">0</span><small>Tu récord se guarda en este navegador.</small></p>
+    </div>
+    <div class="bowl-stage">
+      <button class="bowl" id="bowl" type="button" aria-label="Tocar para agregar una gota al bowl">
+        <div class="water" id="water"></div>
+        <div class="bowl-label" id="bowlLabel">0 / 15</div>
+      </button>
+      <span class="tiny" id="bowlTip">Tocá el bowl 👆</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ADOPCIONES ===================== -->
+<section class="wrap" id="adopciones">
+  <div class="section-head reveal">
+    <div><div class="eyebrow">Adoptar</div><h2>Buscan una familia.<br>¿Hacemos match?</h2></div>
+    <p>Perfiles de demostración para mostrar cómo podría funcionar el catálogo. En una versión real, cada publicación será revisada con quien tenga al animal a cargo.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filtrar animales" style="margin-bottom:20px">
+    <button class="filter active" data-filter="todos" aria-pressed="true">Todos</button>
+    <button class="filter" data-filter="perro" aria-pressed="false">Perros</button>
+    <button class="filter" data-filter="gato" aria-pressed="false">Gatos</button>
+    <button class="filter" data-filter="especial" aria-pressed="false">Necesitan cuidados</button>
+  </div>
+  <div class="animal-grid" id="animalGrid" aria-live="polite"></div>
+  <p class="tiny">Los perfiles y las imágenes son ficticios y sirven únicamente para la demostración. No representan animales disponibles para adopción.</p>
+  <p class="tiny">Fotos de muestra: <a href="https://unsplash.com/" target="_blank" rel="noreferrer">Unsplash</a>. Antes de publicar en producción, revisá la licencia y conservá la atribución cuando corresponda. También podés buscar imágenes con licencia abierta en <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">Pexels</a>, <a href="https://pixabay.com/" target="_blank" rel="noreferrer">Pixabay</a> y <a href="https://commons.wikimedia.org/" target="_blank" rel="noreferrer">Wikimedia Commons</a>.</p>
+</section>
+
+<!-- ===================== AYUDAR ===================== -->
+<section class="wrap" id="ayudar">
+  <div class="section-head reveal">
+    <div><div class="eyebrow">Ayudar</div><h2>Hay muchas formas<br>de cambiar una historia.</h2></div>
+    <p>La ayuda no siempre es dinero. Puede ser un traslado, una difusión, una consulta profesional, alimento o un rato de compañía.</p>
+  </div>
+  <div class="split reveal">
+    <article class="panel"><div class="iconbubble">🩺</div><h3>Una mano para cada caso</h3><p>Campañas para tratamientos, castraciones, cirugías y rehabilitación, con presupuesto, responsable y comprobantes antes de solicitar aportes reales.</p><a href="#sumate" class="btn light">Ofrecer ayuda ↗</a></article>
+    <article class="panel dark"><div class="iconbubble">🦽</div><h3>Ideas que devuelven movimiento</h3><p>Conectar personas que diseñan y fabrican sillas de ruedas, hogares de tránsito y soluciones accesibles para animales con movilidad reducida.</p><a href="#sumate" class="btn yel">Sumar una habilidad ↗</a></article>
+  </div>
+  <div class="panel reveal" style="margin-top:20px">
+    <div class="eyebrow">Ejemplo de campaña · Datos ilustrativos</div>
+    <h3>Un fondo transparente, de principio a fin.</h3>
+    <div class="need-list">
+      <div class="need"><div><strong>1. Presupuesto veterinario</strong><br><span>Profesional y alcance del tratamiento</span></div><span class="status">A validar</span></div>
+      <div class="need"><div><strong>2. Aportes recibidos</strong><br><span>Registro público con privacidad protegida</span></div><span class="status">Sin recaudar</span></div>
+      <div class="need"><div><strong>3. Gastos y comprobantes</strong><br><span>Rendición y actualización del caso</span></div><span class="status">Pendiente</span></div>
+    </div>
+    <p class="tiny">Esta demo no cobra ni recibe donaciones. No transfieras dinero a partir de esta página.</p>
+  </div>
+</section>
+
+<!-- ===================== CONVIVENCIA ===================== -->
+<section class="wrap" id="convivencia">
+  <div class="section-head reveal">
+    <div><div class="eyebrow">Convivencia responsable</div><h2>Cuidar también<br>es prevenir.</h2></div>
+    <p>La seguridad de chicos, perros, gatos y vecinos se construye con responsabilidad, evaluación individual y ayuda temprana.</p>
+  </div>
+  <div class="steps reveal">
+    <article class="step"><div class="step-num">01 / IDENTIFICAR</div><h3>Que puedan volver a casa</h3><p>Chapita, identificación, datos actualizados y prevención de escapes.</p></article>
+    <article class="step"><div class="step-num">02 / PREVENIR</div><h3>Evitar riesgos</h3><p>Correas, cercos seguros, supervisión y espacios adecuados.</p></article>
+    <article class="step"><div class="step-num">03 / PEDIR AYUDA</div><h3>Actuar a tiempo</h3><p>Ante incidentes, documentar hechos y contactar profesionales o autoridades locales.</p></article>
+    <article class="step"><div class="step-num">04 / ACOMPAÑAR</div><h3>Evaluar cada caso</h3><p>Las decisiones deben basarse en conducta y contexto, no solo en raza o apariencia.</p></article>
+  </div>
+</section>
+
+<!-- ===================== MANIFIESTO ===================== -->
+<section class="wrap" id="proyecto">
+  <div class="manifesto reveal">
+    <div>
+      <div class="eyebrow" style="color:var(--ink)">Nuestra idea</div>
+      <h2>La manada está abierta. La ayuda también.</h2>
+      <p>Creemos que mucha gente quiere hacer algo bueno, pero no siempre sabe por dónde empezar. Queremos conectar esas ganas con necesidades concretas, información clara y herramientas que cualquiera pueda mejorar.</p>
+      <a class="btn" href="#sumate">Construirlo entre todos ↗</a>
+    </div>
+    <div class="manifesto-mark" aria-hidden="true"><span>🐕</span><br><span>🐈</span></div>
+  </div>
+</section>
+
+<!-- ===================== SUMATE ===================== -->
+<section class="wrap join" id="sumate">
+  <div class="join-copy">
+    <div class="eyebrow">Sumate al proyecto</div>
+    <h2>Una idea abierta necesita más manos.</h2>
+    <p>¿Sos rescatista, veterinario/a, programador/a, diseñador/a, tenés un refugio o simplemente querés ayudar? Contanos qué te gustaría aportar.</p>
+    <p class="tiny">Este formulario es una demostración local. No envía ni almacena información personal.</p>
+  </div>
+  <form class="form" id="joinForm">
+    <div class="field"><label for="name">Nombre o alias</label><input type="text" id="name" name="name" required maxlength="70" placeholder="¿Cómo te llamamos?"></div>
+    <div class="field"><label for="role">Quiero participar como</label>
+      <select id="role" name="role" required><option value="">Elegí una opción</option><option>Voluntario/a</option><option>Rescatista o refugio</option><option>Veterinario/a</option><option>Programador/a</option><option>Diseñador/a</option><option>Proveedor/a o donante</option><option>Otro aporte</option></select></div>
+    <div class="field full"><label for="city">Ciudad / provincia (opcional)</label><input type="text" id="city" name="city" maxlength="90" placeholder="Ej.: Junín de los Andes, Neuquén"></div>
+    <div class="field full"><label for="idea">¿Qué te gustaría aportar?</label><textarea id="idea" name="idea" required maxlength="600" placeholder="Una habilidad, una idea, un problema que viste…"></textarea></div>
+    <button class="btn" type="submit">Probar envío →</button>
+    <p class="notice">Demo sin backend: al enviar, solo verás un mensaje en esta página.</p>
+  </form>
+</section>
+</main>
+
+<footer class="wrap">
+  <a class="brand" href="#"><span class="brandmark">🐾</span><span>MANADA ABIERTA</span></a>
+  <div>Proyecto abierto · Argentina · 2026</div>
+  <div class="footer-links"><a href="README.md">Documentación</a><a href="CONTRIBUTING.md">Cómo colaborar</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
 <script>
-const animals=[{name:"Mora",type:"perro",age:"2 años aprox.",city:"Ejemplo · Neuquén",tag:"Compañera de paseos",emoji:"🐕",story:"Le encanta olfatear todo y dormir cerca de la gente. Busca una familia paciente.",special:false},{name:"Pixel",type:"gato",age:"8 meses aprox.",city:"Ejemplo · Río Negro",tag:"Curioso profesional",emoji:"🐈",story:"Investiga cada caja y convierte cualquier cordón en un juguete. Ideal para un hogar seguro.",special:false},{name:"Tango",type:"perro",age:"5 años aprox.",city:"Ejemplo · Buenos Aires",tag:"Necesita cuidados",emoji:"🐶",story:"Perfil de muestra de un perro que necesita evaluación veterinaria y un hogar adaptado.",special:true},{name:"Nube",type:"gato",age:"1 año aprox.",city:"Ejemplo · Córdoba",tag:"Experta en siestas",emoji:"🐈‍⬛",story:"Tranquila y observadora. La adopción responsable incluye conocer sus hábitos y necesidades.",special:false},{name:"Chispa",type:"perro",age:"1 año aprox.",city:"Ejemplo · Mendoza",tag:"Energía para compartir",emoji:"🐕‍🦺",story:"Necesita paseos y actividades apropiadas. Su familia ideal tendrá tiempo para acompañarla.",special:false},{name:"Lenteja",type:"gato",age:"3 años aprox.",city:"Ejemplo · Santa Fe",tag:"Necesita cuidados",emoji:"🐈",story:"Ejemplo de una publicación que debería incluir información clara sobre tratamiento y adaptación.",special:true}];
-const grid=document.querySelector('#animalGrid'),toast=document.querySelector('#toast');let activeFilter='todos',toastTimer;function showToast(message){toast.textContent=message;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),3600)}function renderAnimals(){const filtered=animals.filter(a=>activeFilter==='todos'||(activeFilter==='especial'?a.special:a.type===activeFilter));grid.innerHTML='';if(!filtered.length){grid.innerHTML='<p class="empty">No hay perfiles de ejemplo para este filtro.</p>';return}filtered.forEach(a=>{const card=document.createElement('article');card.className='animal-card';const visual=document.createElement('div');visual.className='animal-visual';visual.setAttribute('aria-hidden','true');visual.textContent=a.emoji;const info=document.createElement('div');info.className='animal-info';const tag=document.createElement('span');tag.className='tag';tag.textContent=a.tag;const h=document.createElement('h3');h.textContent=a.name;const p=document.createElement('p');p.textContent=a.story;const meta=document.createElement('div');meta.className='animal-meta';const left=document.createElement('span');left.textContent=(a.type==='perro'?'Perro':'Gato')+' · '+a.age;const right=document.createElement('span');right.textContent=a.city;meta.append(left,right);const button=document.createElement('button');button.className='btn light';button.type='button';button.textContent='Ver cómo sería ↗';button.addEventListener('click',()=>showToast('Perfil de demostración. La plataforma todavía no gestiona adopciones reales.'));info.append(tag,h,p,meta,button);card.append(visual,info);grid.append(card)})}document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{activeFilter=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>{const active=b===button;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});renderAnimals()}));document.querySelector('#joinForm').addEventListener('submit',event=>{event.preventDefault();showToast('¡Gracias por querer sumar! Esta demo no guarda ni envía tus datos todavía.');event.currentTarget.reset()});renderAnimals();
-</script></body></html>
+(()=>{
+'use strict';
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const coarse=matchMedia('(pointer: coarse)').matches;
+function el(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
+
+/* ---------- Storage seguro ---------- */
+const store={
+  get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch{return d}},
+  set(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch{return false}}
+};
+
+/* ---------- Toast ---------- */
+const toast=$('#toast');let tt;
+function say(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove('show'),3800)}
+
+/* ---------- Confeti de emojis ---------- */
+function burst(x,y,list,n=18){
+  if(reduce)return;
+  for(let i=0;i<n;i++){
+    const e=el('span','fx',list[i%list.length]);e.setAttribute('aria-hidden','true');
+    document.body.append(e);
+    const a=Math.random()*Math.PI*2,v=120+Math.random()*220;
+    const dx=Math.cos(a)*v,dy=Math.sin(a)*v-120,rot=(Math.random()-.5)*720;
+    e.animate([
+      {transform:`translate(${x}px,${y}px) scale(.4) rotate(0)`,opacity:1},
+      {transform:`translate(${x+dx}px,${y+dy}px) scale(1.2) rotate(${rot/2}deg)`,opacity:1,offset:.5},
+      {transform:`translate(${x+dx*1.1}px,${y+dy+260}px) scale(.8) rotate(${rot}deg)`,opacity:0}
+    ],{duration:1100+Math.random()*500,easing:'cubic-bezier(.2,.7,.4,1)'}).onfinish=()=>e.remove();
+  }
+}
+const center=e=>{const r=e.getBoundingClientRect();return [r.left+r.width/2,r.top+r.height/2]};
+
+/* =====================================================
+   GENERADOR DE MASCOTAS ILUSTRADAS (imágenes de prueba)
+   ===================================================== */
+let _u=0;
+const INK='#2b0a1d';
+const ACC={
+  bowl:()=>`<path d="M88 268h124q0 46-62 46t-62-46z" fill="#e8112d" stroke="${INK}" stroke-width="4" stroke-linejoin="round"/><ellipse cx="150" cy="268" rx="62" ry="11" fill="#3ad8ff" stroke="${INK}" stroke-width="4"/><circle class="pz-drop" cx="136" cy="196" r="5" fill="#3ad8ff" stroke="${INK}" stroke-width="2"/><circle class="pz-drop" style="animation-delay:.5s" cx="164" cy="202" r="5" fill="#3ad8ff" stroke="${INK}" stroke-width="2"/><circle class="pz-drop" style="animation-delay:1s" cx="150" cy="210" r="5" fill="#3ad8ff" stroke="${INK}" stroke-width="2"/>`,
+  yarn:()=>`<path d="M96 292q60 24 130 6" fill="none" stroke="#ff2e93" stroke-width="5" stroke-linecap="round"/><circle cx="70" cy="282" r="26" fill="#ff2e93" stroke="${INK}" stroke-width="4"/><path d="M50 272q20-14 40 8M46 286q24-10 48 6M56 298q18-8 32 0" fill="none" stroke="#fff200" stroke-width="3" stroke-linecap="round"/>`,
+  ball:()=>`<g class="pz-bounce"><circle cx="236" cy="280" r="22" fill="#fff200" stroke="${INK}" stroke-width="4"/><path d="M216 272q20 10 40 0M216 290q20-10 40 0" fill="none" stroke="${INK}" stroke-width="3"/></g>`,
+  bone:()=>`<g transform="rotate(-10 70 288)"><rect x="36" y="278" width="76" height="18" rx="9" fill="#fff7d6" stroke="${INK}" stroke-width="4"/><circle cx="36" cy="277" r="10" fill="#fff7d6" stroke="${INK}" stroke-width="4"/><circle cx="36" cy="297" r="10" fill="#fff7d6" stroke="${INK}" stroke-width="4"/><circle cx="112" cy="277" r="10" fill="#fff7d6" stroke="${INK}" stroke-width="4"/><circle cx="112" cy="297" r="10" fill="#fff7d6" stroke="${INK}" stroke-width="4"/><rect x="38" y="279" width="72" height="16" rx="8" fill="#fff7d6"/></g>`,
+  fish:()=>`<g class="pz-bounce"><ellipse cx="226" cy="284" rx="30" ry="15" fill="#ffb000" stroke="${INK}" stroke-width="4"/><path d="M252 284l24-14v28z" fill="#ffb000" stroke="${INK}" stroke-width="4" stroke-linejoin="round"/><circle cx="212" cy="280" r="3.5" fill="${INK}"/></g>`,
+  none:()=>''
+};
+const HEAD_ACC={
+  hat:()=>`<g transform="rotate(-8 150 74)"><path d="M122 76L150 24l28 52z" fill="#ff2e93" stroke="${INK}" stroke-width="4" stroke-linejoin="round"/><path d="M133 56h34M127 67h46" stroke="#fff200" stroke-width="5"/><circle cx="150" cy="22" r="9" fill="#fff200" stroke="${INK}" stroke-width="3"/></g>`,
+  flower:()=>`<g transform="translate(210 72)"><circle cx="0" cy="-13" r="10" fill="#ff2e93" stroke="${INK}" stroke-width="3"/><circle cx="13" cy="0" r="10" fill="#ff2e93" stroke="${INK}" stroke-width="3"/><circle cx="0" cy="13" r="10" fill="#ff2e93" stroke="${INK}" stroke-width="3"/><circle cx="-13" cy="0" r="10" fill="#ff2e93" stroke="${INK}" stroke-width="3"/><circle r="8" fill="#fff200" stroke="${INK}" stroke-width="3"/></g>`
+};
+const PRESETS={
+  mochi:{kind:'dog',fur:'#f1b36b',fur2:'#fff1dc',ear:'#b8702f',bg:['#ff2e93','#ffb000'],acc:'bowl'},
+  pixel:{kind:'cat',fur:'#ff9f45',fur2:'#ffe6c2',ear:'#ff9f45',bg:['#fff200','#ff2e93'],acc:'yarn'},
+  nube:{kind:'cat',fur:'#3b2a38',fur2:'#7a5f74',ear:'#3b2a38',bg:['#e8112d','#ffd23f'],acc:'fish'},
+  chispa:{kind:'dog',fur:'#ffffff',fur2:'#fff7e6',ear:'#ffb000',patch:'#ffb000',bg:['#ffb000','#ff2e93'],acc:'ball'},
+  tango:{kind:'dog',fur:'#b98a5e',fur2:'#ffe3c2',ear:'#7a4a25',bg:['#ff5ea8','#fff200'],acc:'bone'},
+  lenteja:{kind:'cat',fur:'#c9c6d6',fur2:'#f4f2fa',ear:'#c9c6d6',bg:['#e8112d','#ff9bd0'],acc:'bowl'},
+  coco:{kind:'dog',fur:'#ff9f45',fur2:'#ffffff',ear:'#e07a1f',bg:['#fff200','#ff6a1a'],acc:'hat'},
+  luna:{kind:'cat',fur:'#ffffff',fur2:'#ffe9f3',ear:'#ffffff',bg:['#ff2e93','#e8112d'],acc:'flower'},
+  bruno:{kind:'dog',fur:'#3b2a38',fur2:'#8a6f84',ear:'#1f121b',bg:['#ffd23f','#ff5ea8'],acc:'heart'}
+};
+function petSVG(o){
+  const {kind='dog',fur='#f1b36b',fur2='#fff1dc',ear='#b8702f',patch=null,bg=['#ff2e93','#ffb000'],acc='none',nobg=false}=o;
+  const id='pg'+(++_u),dog=kind==='dog',st=`stroke="${INK}" stroke-width="4" stroke-linejoin="round"`;
+  let s='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" class="pz">';
+  s+=`<style>
+.pz-head{transform-origin:150px 215px;animation:pzh 3s ease-in-out infinite}
+@keyframes pzh{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.pz-body{transform-origin:150px 296px;animation:pzb 1.8s ease-in-out infinite}
+@keyframes pzb{50%{transform:scaleY(1.03)}}
+.pz-eye{transform-box:fill-box;transform-origin:center;animation:pze 4s infinite}
+@keyframes pze{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+.pz-tail{transform-origin:215px 250px;animation:pzt .55s ease-in-out infinite alternate}
+@keyframes pzt{from{transform:rotate(-12deg)}to{transform:rotate(14deg)}}
+.pz-earl{transform-origin:95px 85px;animation:pzel 2.4s ease-in-out infinite}
+.pz-earr{transform-origin:205px 85px;animation:pzel 2.4s ease-in-out infinite reverse}
+@keyframes pzel{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(6deg)}}
+.pz-tongue{transform-box:fill-box;transform-origin:top;animation:pztg 1s ease-in-out infinite}
+@keyframes pztg{50%{transform:scaleY(1.25)}}
+.pz-drop{animation:pzd 1.4s ease-in infinite}
+@keyframes pzd{0%{transform:translateY(0);opacity:0}20%{opacity:1}100%{transform:translateY(58px);opacity:0}}
+.pz-tw{transform-box:fill-box;transform-origin:center;animation:pztw 1.8s ease-in-out infinite}
+@keyframes pztw{50%{transform:scale(.3);opacity:.3}}
+.pz-bounce{animation:pzbo .9s ease-in-out infinite}
+@keyframes pzbo{50%{transform:translateY(-24px)}}
+.pz-float{animation:pzf 2.6s ease-in-out infinite}
+@keyframes pzf{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+</style>`;
+  if(!nobg){
+    s+=`<defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${bg[0]}"/><stop offset="1" stop-color="${bg[1]}"/></linearGradient></defs><rect width="300" height="320" fill="url(#${id})"/><circle cx="256" cy="58" r="26" fill="#fff200" opacity=".85"/><path d="M26 262l22-38 22 38z" fill="#fff" opacity=".35"/>`;
+  }
+  const star='M0-12L3.5-3.5 12 0 3.5 3.5 0 12-3.5 3.5-12 0-3.5-3.5Z';
+  s+=`<g transform="translate(46 70)"><path class="pz-tw" d="${star}" fill="#fff"/></g><g transform="translate(258 140)"><path class="pz-tw" style="animation-delay:.6s" d="${star}" fill="#fff"/></g><g transform="translate(40 190)"><path class="pz-tw" style="animation-delay:1.1s" d="${star}" fill="#fff200"/></g>`;
+  /* cola */
+  s+=dog
+    ?`<path class="pz-tail" d="M215 250q45-10 38-60" fill="none" stroke="${INK}" stroke-width="28" stroke-linecap="round"/><path class="pz-tail" d="M215 250q45-10 38-60" fill="none" stroke="${fur}" stroke-width="20" stroke-linecap="round"/>`
+    :`<path class="pz-tail" d="M215 255q60 10 45-80q-5-20-20-22" fill="none" stroke="${INK}" stroke-width="24" stroke-linecap="round"/><path class="pz-tail" d="M215 255q60 10 45-80q-5-20-20-22" fill="none" stroke="${fur}" stroke-width="16" stroke-linecap="round"/>`;
+  /* cuerpo */
+  s+=`<g class="pz-body"><ellipse cx="150" cy="240" rx="80" ry="58" fill="${fur}" ${st}/><ellipse cx="150" cy="254" rx="46" ry="36" fill="${fur2}"/><ellipse cx="112" cy="290" rx="24" ry="14" fill="${fur2}" ${st}/><ellipse cx="188" cy="290" rx="24" ry="14" fill="${fur2}" ${st}/></g>`;
+  /* cabeza */
+  s+='<g class="pz-head">';
+  if(!dog){
+    s+=`<g class="pz-earl"><path d="M80 105L74 50l48 30z" fill="${fur}" ${st}/><path d="M86 94L83 66l24 15z" fill="#ff8fc4"/></g><g class="pz-earr"><path d="M220 105L226 50l-48 30z" fill="${fur}" ${st}/><path d="M214 94L217 66l-24 15z" fill="#ff8fc4"/></g>`;
+  }
+  s+=`<circle cx="150" cy="140" r="82" fill="${fur}" ${st}/>`;
+  if(patch)s+=`<ellipse cx="186" cy="130" rx="32" ry="30" fill="${patch}"/>`;
+  if(dog){
+    s+=`<g class="pz-earl"><ellipse cx="70" cy="122" rx="24" ry="48" transform="rotate(14 70 122)" fill="${ear}" ${st}/></g><g class="pz-earr"><ellipse cx="230" cy="122" rx="24" ry="48" transform="rotate(-14 230 122)" fill="${ear}" ${st}/></g>`;
+  }
+  s+=`<ellipse cx="150" cy="172" rx="${dog?40:34}" ry="${dog?30:25}" fill="${fur2}"/>`;
+  s+=`<g class="pz-eye"><circle cx="116" cy="140" r="14" fill="${INK}"/><circle cx="121" cy="134" r="5.5" fill="#fff"/><circle cx="111" cy="146" r="2.5" fill="#fff"/></g><g class="pz-eye"><circle cx="184" cy="140" r="14" fill="${INK}"/><circle cx="189" cy="134" r="5.5" fill="#fff"/><circle cx="179" cy="146" r="2.5" fill="#fff"/></g>`;
+  s+='<circle cx="92" cy="166" r="12" fill="#ff5ea8" opacity=".5"/><circle cx="208" cy="166" r="12" fill="#ff5ea8" opacity=".5"/>';
+  s+=dog
+    ?`<ellipse cx="150" cy="156" rx="12" ry="8.5" fill="${INK}"/><ellipse cx="146" cy="153" rx="4" ry="2" fill="#fff" opacity=".7"/>`
+    :`<path d="M142 156h16l-8 9z" fill="#ff5ea8" stroke="${INK}" stroke-width="2.5" stroke-linejoin="round"/>`;
+  s+=`<path d="M150 165v8M150 173q-12 12-24 3M150 173q12 12 24 3" fill="none" stroke="${INK}" stroke-width="3.5" stroke-linecap="round"/>`;
+  if(dog)s+=`<path class="pz-tongue" d="M140 178q10 28 20 0z" fill="#ff5ea8" stroke="${INK}" stroke-width="3" stroke-linejoin="round"/>`;
+  else s+=`<path d="M70 168l34 4M70 182l34-4M230 168l-34 4M230 182l-34-4" stroke="${INK}" stroke-width="2.5" stroke-linecap="round"/>`;
+  if(HEAD_ACC[acc])s+=HEAD_ACC[acc]();
+  s+='</g>';
+  if(acc==='heart'){
+    s+=`<path class="pz-float" d="M60 96c-14-16-34 4-14 22l14 12 14-12c20-18 0-38-14-22z" fill="#e8112d" stroke="${INK}" stroke-width="3"/><path class="pz-float" style="animation-delay:-1.2s" d="M246 70c-9-10-22 3-9 14l9 8 9-8c13-11 0-24-9-14z" fill="#ff2e93" stroke="${INK}" stroke-width="3"/>`;
+  }
+  if(ACC[acc])s+=ACC[acc]();
+  return s+'</svg>';
+}
+const svgURI=svg=>'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+const petURI=(key,over)=>svgURI(petSVG(Object.assign({},PRESETS[key],over||{})));
+// Fallback de emergencia para fotos externas que no carguen en muro/adopciones.
+document.addEventListener('error',function(ev){
+  const im=ev.target;
+  if(!im || im.tagName!=='IMG' || im.classList.contains('clip-photo')) return;
+  if(im.dataset.photoFallback==='done'){
+    im.onerror=null;
+    im.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%23ffe5ef%22/%3E%3Ctext x=%22200%22 y=%22230%22 font-size=%22150%22 text-anchor=%22middle%22%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E';
+    return;
+  }
+  im.dataset.photoFallback='done';
+  im.src='https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80';
+},true);
+
+
+/* ---------- Huellitas que siguen al cursor ---------- */
+if(!reduce&&!coarse){
+  let last=0,side=1;
+  addEventListener('pointermove',e=>{
+    const now=performance.now();if(now-last<110)return;last=now;side*=-1;
+    const p=el('span','trail','🐾');p.setAttribute('aria-hidden','true');
+    p.style.setProperty('--x',(e.clientX+side*8)+'px');
+    p.style.setProperty('--y',(e.clientY+8)+'px');
+    p.style.setProperty('--rot',(side*18)+'deg');
+    document.body.append(p);setTimeout(()=>p.remove(),950);
+  },{passive:true});
+}
+
+/* ---------- Reveal on scroll ---------- */
+if('IntersectionObserver' in window&&!reduce){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  $$('.reveal').forEach(e=>io.observe(e));
+}else $$('.reveal').forEach(e=>e.classList.add('in'));
+
+/* ---------- Palabra rotativa ---------- */
+const words=['sorbos','ladridos','ronroneos','colitas','abrazos','chapuzones'];
+const swap=$('#swap');let wi=0;
+if(!reduce)setInterval(()=>{wi=(wi+1)%words.length;swap.textContent=words[wi];swap.classList.add('bump');setTimeout(()=>swap.classList.remove('bump'),200)},2200);
+
+/* ---------- Marquee ---------- */
+const mq=['💧 HIDRATACIÓN PARA TODOS','🐶 ADOPTÁ, NO COMPRES','🐱 CASTRAR ES CUIDAR','🐾 MANADA ABIERTA','🎬 CLIPS PARA EXPLOTAR DE CUTE','💖 AGUA FRESCA, SIEMPRE'];
+$('#marquee').textContent=(mq.join('   ✦   ')+'   ✦   ').repeat(4);
+
+/* ---------- Hero: corgi acariciable ---------- */
+const heroPet=$('#heroPet');
+heroPet.innerHTML=petSVG(Object.assign({},PRESETS.coco,{acc:'bowl',nobg:true}));
+const pats=['¡Guau! 🐶','Un perro feliz = un humano feliz 💖','Dato: cambiá el agua todos los días 💧','Los gatos prefieren agua que se mueve: probá con una fuente 🐱','¡Ahora a subir la foto de tu mascota! 📸'];
+let pi=0;
+heroPet.addEventListener('click',()=>{const [x,y]=center(heroPet);burst(x,y,['💖','🐾','✨','💧'],16);say(pats[pi++%pats.length])});
+
+/* =====================================================
+   FEED ESTILO TIKTOK
+   ===================================================== */
+const CLIPS=[
+ {u:'@cachorrito.pan',cap:'Se durmió en mitad de la merienda 😴🐾',snd:'♫ sonido original · Manada',pet:{p:'mochi'},photo:'https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=900&h=1600&q=85',likes:28000,com:700,sh:1200},
+ {u:'@orejitas.club',cap:'Esas orejitas todavía no saben a dónde ir 😂',snd:'♫ sonido original · Manada',pet:{p:'tango'},photo:'https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=900&h=1600&q=85',likes:45391,com:1317,sh:2303},
+ {u:'@patitas.rescatadas',cap:'Rescatado, cuidado y ahora feliz para siempre 💖🐶',snd:'♫ sonido original · Manada',pet:{p:'bruno'},photo:'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&h=1600&q=85',likes:62782,com:1934,sh:3406},
+ {u:'@cachorro.valiente',cap:'Primer encuentro con una hoja 🍂 el gran enemigo',snd:'♫ sonido original · Manada',pet:{p:'coco'},photo:'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=900&h=1600&q=85',likes:80173,com:2551,sh:4509},
+ {u:'@cachorros.enamorados',cap:'Se abrazaron y no los queremos separar 🥺',snd:'♫ sonido original · Manada',pet:{p:'bruno'},photo:'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&h=1600&q=85',likes:97564,com:3168,sh:5612},
+ {u:'@perro.mimoso',cap:'Se apoya en tu mano para quedarse cerca 🫶',snd:'♫ sonido original · Manada',pet:{p:'mochi'},photo:'https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&h=1600&q=85',likes:114955,com:3785,sh:6715},
+ {u:'@cachorritos.club',cap:'La carrera más lenta del mundo 🐾😂',snd:'♫ sonido original · Manada',pet:{p:'chispa'},photo:'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=900&h=1600&q=85',likes:132346,com:4402,sh:7818},
+ {u:'@adopta.una.colita',cap:'No compres amor: adoptá y cambiá dos vidas 🐶💖',snd:'♫ sonido original · Manada',pet:{p:'bruno'},photo:'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&h=1600&q=85',likes:149737,com:5019,sh:8921},
+ {u:'@mini.pancita',cap:'Pancita redonda, patitas mini y mucho sueño 🥹',snd:'♫ sonido original · Manada',pet:{p:'coco'},photo:'https://images.unsplash.com/photo-1583337130417-3346a1be7dde?auto=format&fit=crop&w=900&h=1600&q=85',likes:167128,com:5636,sh:10024},
+ {u:'@perrito.pan',cap:'El bebé más chiquito se quedó con la manta 💤',snd:'♫ sonido original · Manada',pet:{p:'mochi'},photo:'https://images.unsplash.com/photo-1525253086316-d0c936c814f8?auto=format&fit=crop&w=900&h=1600&q=85',likes:184519,com:6253,sh:11127},
+ {u:'@club.de.cachorros',cap:'¿Cómo puede ser tan chiquito? 😭💗',snd:'♫ sonido original · Manada',pet:{p:'tango'},photo:'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&h=1600&q=85',likes:201910,com:6870,sh:12230},
+ {u:'@cola.feliz',cap:'Su primer paseo y todo le parece gigante 🌎🐾',snd:'♫ sonido original · Manada',pet:{p:'chispa'},photo:'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&h=1600&q=85',likes:29301,com:7487,sh:13333},
+ {u:'@guau.bebe',cap:'Una siestita y después seguimos jugando',snd:'♫ sonido original · Manada',pet:{p:'coco'},photo:'https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=900&h=1600&q=85',likes:46692,com:8104,sh:14436},
+ {u:'@rescate.con.amor',cap:'La segunda oportunidad tiene cuatro patas 💖',snd:'♫ sonido original · Manada',pet:{p:'bruno'},photo:'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&h=1600&q=85',likes:64083,com:8721,sh:15539},
+ {u:'@mini.explorador',cap:'Descubriendo el mundo a pasitos torpes 🐶',snd:'♫ sonido original · Manada',pet:{p:'mochi'},photo:'https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=900&h=1600&q=85',likes:81474,com:838,sh:16642},
+ {u:'@mini.michi',cap:'Este michi bebé todavía no sabe usar sus patitas 😭🐱',snd:'♫ sonido original · Manada',pet:{p:'pixel'},photo:'https://images.unsplash.com/photo-1573865526739-10659ded8a3?auto=format&fit=crop&w=900&h=1600&q=85',likes:98865,com:1455,sh:17745},
+ {u:'@gatito.siesta',cap:'Cinco segundos de juego y ocho horas de sueño 💤',snd:'♫ sonido original · Manada',pet:{p:'nube'},photo:'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=900&h=1600&q=85',likes:116256,com:2072,sh:18848},
+ {u:'@luna.princesa',cap:'La mini reina de la casa 🌸🐈 #gatita',snd:'♫ sonido original · Manada',pet:{p:'luna'},photo:'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&h=1600&q=85',likes:133647,com:2689,sh:19951},
+ {u:'@gatito.curioso',cap:'Descubrió su reflejo y se hizo un amigo 🪞🐈',snd:'♫ sonido original · Manada',pet:{p:'pixel'},photo:'https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=900&h=1600&q=85',likes:151038,com:3306,sh:21054},
+ {u:'@michi.mimoso',cap:'La pancita más besable de internet 😭💗',snd:'♫ sonido original · Manada',pet:{p:'luna'},photo:'https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=900&h=1600&q=85',likes:168429,com:3923,sh:22157},
+ {u:'@gatitos.al.sol',cap:'Tomando solcito como si pagara alquiler ☀️🐱',snd:'♫ sonido original · Manada',pet:{p:'nube'},photo:'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=900&h=1600&q=85',likes:185820,com:4540,sh:2260},
+ {u:'@michi.patitas',cap:'Patas diminutas, actitud de jefe 😼',snd:'♫ sonido original · Manada',pet:{p:'pixel'},photo:'https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=900&h=1600&q=85',likes:203211,com:5157,sh:3363},
+ {u:'@mini.pantera',cap:'El michi más chiquito con el ronroneo más fuerte 🖤',snd:'♫ sonido original · Manada',pet:{p:'luna'},photo:'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&h=1600&q=85',likes:30602,com:5774,sh:4466},
+ {u:'@gatito.jugueton',cap:'El ratoncito de tela no tenía ninguna chance 🧶',snd:'♫ sonido original · Manada',pet:{p:'lenteja'},photo:'https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=900&h=1600&q=85',likes:47993,com:6391,sh:5569},
+ {u:'@michi.bolita',cap:'Una bolita de pelos con modo ronroneo activado 🥹',snd:'♫ sonido original · Manada',pet:{p:'nube'},photo:'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=900&h=1600&q=85',likes:65384,com:7008,sh:6672},
+ {u:'@michi.con.manta',cap:'Se hizo burrito con la mantita y ganó internet 🌯',snd:'♫ sonido original · Manada',pet:{p:'pixel'},photo:'https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=900&h=1600&q=85',likes:82775,com:7625,sh:7775},
+ {u:'@gatito.dormilon',cap:'Se quedó dormido arriba de su juguete 🥹',snd:'♫ sonido original · Manada',pet:{p:'lenteja'},photo:'https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=900&h=1600&q=85',likes:100166,com:8242,sh:8878},
+ {u:'@patitas.de.algodon',cap:'Dos patitas y un corazón enorme 💗',snd:'♫ sonido original · Manada',pet:{p:'nube'},photo:'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=900&h=1600&q=85',likes:117557,com:8859,sh:9981},
+ {u:'@michi.jefe',cap:'No llega a la mesa pero ya es el dueño de casa 😼',snd:'♫ sonido original · Manada',pet:{p:'pixel'},photo:'https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=900&h=1600&q=85',likes:134948,com:976,sh:11084},
+ {u:'@bebes.gatunos',cap:'Pequeñito, curioso y lleno de personalidad 🐱',snd:'♫ sonido original · Manada',pet:{p:'luna'},photo:'https://images.unsplash.com/photo-1573865526739-10659ded8a3?auto=format&fit=crop&w=900&h=1600&q=85',likes:152339,com:1593,sh:12187}
+];
+const POOL=[['@gatolover99','no puedo, me explotó el corazón 😭💖'],['@perrito.fan','necesito uno YA'],['@mica.y.sus.gatos','el sonido de fondo 🔥'],['@pablo_arg','jajaja increíble'],['@anita.rescata','adopten, no compren 🐾'],['@vete.sofi','ese bowl siempre lleno, así se hace 💧'],['@juancito','lo miré 14 veces seguidas']];
+function fmt(n){return n>=1e6?(n/1e6).toFixed(1).replace('.0','')+'M':n>=1e3?(n/1e3).toFixed(1).replace('.0','')+'K':String(n)}
+
+const phone=$('#phone'),feed=$('#feed'),prog=$('#prog'),counter=$('#counter'),sheet=$('#sheet');
+let clipLikes=new Set(store.get('ma_clip_likes',[]));
+let follows=new Set(store.get('ma_follows',[]));
+const extraComments={};
+let cur=0;
+
+function likeCount(i){return CLIPS[i].likes+(clipLikes.has(i)?1:0)}
+function toggleLike(i,forceOn,x,y){
+  const was=clipLikes.has(i);
+  if(forceOn&&was){burst(x,y,['❤️','💖','💗'],8);return}
+  if(was)clipLikes.delete(i);else{clipLikes.add(i);const b=$(`.slide[data-i="${i}"] .rlike`);const [cx,cy]=(x!=null)?[x,y]:center(b);burst(cx,cy,['❤️','💖','💗','✨'],12)}
+  store.set('ma_clip_likes',[...clipLikes]);
+  const b=$(`.slide[data-i="${i}"] .rlike`);b.classList.toggle('on',clipLikes.has(i));b.setAttribute('aria-pressed',String(clipLikes.has(i)));b.querySelector('.n').textContent=fmt(likeCount(i));
+}
+
+CLIPS.forEach((c,i)=>{
+  const sl=el('article','slide');sl.dataset.i=i;
+  const pr=PRESETS[c.pet.p];
+  const bg=pr.bg;
+  const stage=el('div','stage');stage.style.background=`linear-gradient(160deg,${bg[0]},${bg[1]})`;
+  const conf=el('div','confetti-bg');conf.setAttribute('aria-hidden','true');
+  ['💖','✨','🐾','⭐'].forEach((t,k)=>{const sp=el('span',null,t);sp.style.cssText=`left:${[8,78,14,70][k]}%;top:${[16,24,62,70][k]}%;animation-delay:${-k*1.1}s`;conf.append(sp)});
+  if(c.photo){
+    const photo=el('img','clip-photo');
+    photo.src=c.photo;photo.alt=c.cap;photo.loading=i<3?'eager':'lazy';photo.decoding='async';
+    photo.onerror=()=>{
+      if(photo.dataset.retried!=='1'){
+        photo.dataset.retried='1';
+        photo.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&h=1600&q=80';
+      }else{
+        const fallback=el('div');
+        fallback.innerHTML=petSVG(Object.assign({},pr,c.pet,{nobg:true}));
+        photo.replaceWith(fallback);
+      }
+    };
+    stage.append(photo,conf);
+    const vignette=el('div','photo-vignette');vignette.setAttribute('aria-hidden','true');stage.append(vignette);
+  }else{
+    const svgWrap=el('div');svgWrap.setAttribute('aria-hidden','true');
+    svgWrap.innerHTML=petSVG(Object.assign({},pr,c.pet,{nobg:true}));
+    stage.append(conf,svgWrap);
+  }
+  stage.setAttribute('role','img');stage.setAttribute('aria-label','Clip de mascotas: '+c.cap);
+  let tapT=null;
+  stage.addEventListener('click',e=>{
+    if(tapT){clearTimeout(tapT);tapT=null;toggleLike(i,true,e.clientX,e.clientY)}
+    else tapT=setTimeout(()=>{tapT=null;togglePause()},260);
+  });
+  const shade=el('div','shade');
+  /* rail */
+  const rail=el('div','rail');
+  const av=el('button','rbtn avatar');av.type='button';
+  const avIc=el('span','ic',c.u.charAt(1).toUpperCase());const plus=el('span','plus',follows.has(c.u)?'✓':'+');
+  av.append(avIc,plus);av.setAttribute('aria-label','Seguir a '+c.u);av.setAttribute('aria-pressed',String(follows.has(c.u)));av.classList.toggle('on',follows.has(c.u));
+  av.addEventListener('click',()=>{
+    const on=!follows.has(c.u);on?follows.add(c.u):follows.delete(c.u);store.set('ma_follows',[...follows]);
+    $$('.slide').forEach(s2=>{const j=+s2.dataset.i;if(CLIPS[j].u===c.u){const b=s2.querySelector('.avatar');b.classList.toggle('on',on);b.setAttribute('aria-pressed',String(on));b.querySelector('.plus').textContent=on?'✓':'+'}});
+    if(on){const [x,y]=center(av);burst(x,y,['💖','✨'],8);say('Ahora seguís a '+c.u+' 💖')}
+  });
+  const like=el('button','rbtn rlike');like.type='button';like.setAttribute('aria-pressed',String(clipLikes.has(i)));like.setAttribute('aria-label','Me gusta');
+  like.append(el('span','ic','❤️'),el('span','n',fmt(likeCount(i))));like.classList.toggle('on',clipLikes.has(i));
+  like.addEventListener('click',()=>toggleLike(i));
+  const com=el('button','rbtn rcom');com.type='button';com.setAttribute('aria-label','Ver comentarios');
+  com.append(el('span','ic','💬'),el('span','n',fmt(c.com)));
+  com.addEventListener('click',()=>openSheet(i));
+  const sh=el('button','rbtn');sh.type='button';sh.setAttribute('aria-label','Compartir');
+  sh.append(el('span','ic','↗'),el('span','n',fmt(c.sh)));
+  sh.addEventListener('click',()=>{try{navigator.clipboard&&navigator.clipboard.writeText(location.href)}catch{}const [x,y]=center(sh);burst(x,y,['🔗','✨'],6);say('¡Compartido! (demo) 📋')});
+  const disc=el('div','disc');disc.setAttribute('aria-hidden','true');
+  rail.append(av,like,com,sh,disc);
+  /* meta */
+  const meta=el('div','meta');
+  meta.append(el('b',null,c.u),el('p',null,c.cap),el('div','sound',c.snd));
+  sl.append(stage,shade,rail,meta);
+  feed.append(sl);
+});
+
+function setCur(i){
+  cur=i;
+  $$('.slide').forEach((s,k)=>s.classList.toggle('on',k===i));
+  counter.textContent=(i+1)+'/'+CLIPS.length;
+  elapsed=0;prog.style.width='0%';
+}
+function go(i){
+  const n=CLIPS.length;i=(i+n)%n;
+  feed.scrollTo({top:i*feed.clientHeight,behavior:reduce?'auto':'smooth'});
+}
+let ticking=false;
+feed.addEventListener('scroll',()=>{
+  if(ticking)return;ticking=true;
+  requestAnimationFrame(()=>{ticking=false;const i=Math.round(feed.scrollTop/feed.clientHeight);if(i!==cur&&i>=0&&i<CLIPS.length)setCur(i)});
+},{passive:true});
+feed.addEventListener('keydown',e=>{
+  if(e.key==='ArrowDown'){e.preventDefault();go(cur+1)}
+  else if(e.key==='ArrowUp'){e.preventDefault();go(cur-1)}
+  else if(e.key===' '&&e.target===feed){e.preventDefault();togglePause()}
+});
+$('#btnDown').addEventListener('click',()=>go(cur+1));
+$('#btnUp').addEventListener('click',()=>go(cur-1));
+$('#btnPlay').addEventListener('click',togglePause);
+
+/* Autoplay */
+const DUR=7000;
+let paused=reduce,visible=false,elapsed=0,lastTs=0,sheetOpen=false;
+function togglePause(){paused=!paused;phone.classList.toggle('paused',paused)}
+phone.classList.toggle('paused',paused);
+if('IntersectionObserver' in window){
+  new IntersectionObserver(es=>{visible=es[0].isIntersecting},{threshold:.4}).observe(phone);
+}else visible=true;
+function tick(ts){
+  const dt=Math.min(100,ts-(lastTs||ts));lastTs=ts;
+  if(!paused&&visible&&!sheetOpen&&!document.hidden){
+    elapsed+=dt;prog.style.width=Math.min(100,elapsed/DUR*100)+'%';
+    if(elapsed>=DUR){elapsed=0;go(cur+1)}
+  }
+  requestAnimationFrame(tick);
+}
+setCur(0);requestAnimationFrame(tick);
+
+/* Comentarios */
+let sheetClip=0;
+function commentsFor(i){
+  const base=[0,1,2].map(k=>POOL[(i+k*2)%POOL.length]);
+  return base.concat(extraComments[i]||[]);
+}
+function renderComments(){
+  const ul=$('#clist');ul.innerHTML='';
+  commentsFor(sheetClip).forEach(([u,t])=>{
+    const li=el('li');li.append(el('span','av',u.charAt(1).toUpperCase()));
+    const d=el('div');d.append(el('b',null,u),el('span',null,t));li.append(d);ul.append(li);
+  });
+  ul.scrollTop=ul.scrollHeight;
+  $('#sheetTitle').textContent=fmt(CLIPS[sheetClip].com+(extraComments[sheetClip]||[]).length)+' comentarios';
+}
+function openSheet(i){sheetClip=i;sheetOpen=true;sheet.classList.add('open');sheet.setAttribute('aria-hidden','false');renderComments();$('#cinput').focus({preventScroll:true})}
+function closeSheet(){sheetOpen=false;sheet.classList.remove('open');sheet.setAttribute('aria-hidden','true')}
+$('#sheetClose').addEventListener('click',closeSheet);
+addEventListener('keydown',e=>{if(e.key==='Escape'&&sheetOpen)closeSheet()});
+$('#cform').addEventListener('submit',e=>{
+  e.preventDefault();const inp=$('#cinput'),t=inp.value.trim();if(!t)return;
+  (extraComments[sheetClip]=extraComments[sheetClip]||[]).push(['@vos',t]);
+  inp.value='';renderComments();
+  const b=$(`.slide[data-i="${sheetClip}"] .rcom .n`);b.textContent=fmt(CLIPS[sheetClip].com+extraComments[sheetClip].length);
+});
+
+/* ---------- TikToks reales (embed bajo demanda) ---------- */
+const TT_RE=/^https:\/\/(www\.)?tiktok\.com\/@([\w.\-]{1,40})\/video\/(\d{8,25})(?:[/?#].*)?$/i;
+let ttItems=store.get('ma_tt',[]).filter(x=>x&&typeof x.id==='string'&&/^\d{8,25}$/.test(x.id)&&typeof x.user==='string'&&/^[\w.\-]{1,40}$/.test(x.user));
+function loadTT(){
+  const old=document.getElementById('ttjs');if(old)old.remove();
+  const s=document.createElement('script');s.id='ttjs';s.async=true;s.src='https://www.tiktok.com/embed.js';
+  document.body.append(s);
+}
+function renderTT(){
+  const list=$('#ttList');list.innerHTML='';
+  ttItems.forEach(it=>{
+    const w=el('div','ttitem');
+    const bq=document.createElement('blockquote');bq.className='tiktok-embed';
+    bq.setAttribute('cite',`https://www.tiktok.com/@${it.user}/video/${it.id}`);
+    bq.setAttribute('data-video-id',it.id);bq.style.cssText='max-width:325px;min-width:325px;';
+    bq.append(document.createElement('section'));
+    const d=el('button','tdel','Quitar este TikTok');d.type='button';
+    d.addEventListener('click',()=>{ttItems=ttItems.filter(x=>x.id!==it.id);store.set('ma_tt',ttItems);renderTT()});
+    w.append(bq,d);list.append(w);
+  });
+  if(ttItems.length)loadTT();
+}
+$('#ttForm').addEventListener('submit',e=>{
+  e.preventDefault();const err=$('#ttErr');err.textContent='';
+  const v=$('#ttUrl').value.trim(),m=TT_RE.exec(v);
+  if(!m){err.textContent='Pegá un link largo de TikTok, como https://www.tiktok.com/@usuario/video/1234567890123456789';return}
+  if(ttItems.some(x=>x.id===m[3])){err.textContent='Ese video ya está agregado.';return}
+  if(ttItems.length>=6){err.textContent='Por ahora podés agregar hasta 6 videos.';return}
+  ttItems.push({user:m[2],id:m[3]});store.set('ma_tt',ttItems);$('#ttUrl').value='';renderTT();say('Video agregado 🎥');
+});
+renderTT();
+
+/* ---------- Minijuego ---------- */
+const GOAL=15;let drops=0,bowls=store.get('ma_bowls',0);
+const water=$('#water'),bl=$('#bowlLabel'),bf=$('#bowlsFull'),tip=$('#bowlTip');
+bf.textContent=bowls;
+$('#bowl').addEventListener('click',e=>{
+  drops++;water.style.height=Math.min(100,drops/GOAL*100)+'%';bl.textContent=drops+' / '+GOAL;
+  const [cx,cy]=center($('#bowl'));burst(e.clientX||cx,e.clientY||cy,['💧'],3);
+  if(drops>=GOAL){
+    bowls++;store.set('ma_bowls',bowls);bf.textContent=bowls;tip.textContent='¡Bowl lleno! 🎉 ¿Otra vez?';
+    burst(cx,cy,['🐶','🐱','🐾','💖','🎉','🦴'],28);say('¡Bowl lleno! Hay agua fresca para toda la manada 💙');
+    drops=0;setTimeout(()=>{water.style.height='0%';bl.textContent='0 / '+GOAL},900);
+  }else tip.textContent=drops<5?'Seguí así 👆':drops<10?'¡Ya casi la mitad!':'¡Falta poquito!';
+});
+
+/* ---------- MURO ---------- */
+const TRAITS=['Cariñoso/a','Payaso/a','Dormilón/a','Miedoso/a','Ladrón/a de medias','Elegante','Intenso/a','Curioso/a','Glotón/a','Valiente','Protector/a','Independiente'];
+const EMOJI={perro:'🐕',gato:'🐈',otro:'🐾'};
+const DEMO=[
+  {id:'d1',name:'Mora',kind:'perro',photo:'https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=85',traits:['Cariñoso/a','Glotón/a'],pers:'Toma tanta agua de un tirón que después hay que secar el piso.',likes:'Perseguir su propia sombra',base:12,r:-2},
+  {id:'d2',name:'Pixel',kind:'gato',photo:'https://images.unsplash.com/photo-1573865526739-10659ded8a3?auto=format&fit=crop&w=900&q=85',traits:['Curioso/a','Payaso/a'],pers:'Solo toma agua si la sacás del vaso de su humano.',likes:'Tirar cosas de la mesa',base:19,r:2},
+  {id:'d3',name:'Nube',kind:'gato',photo:'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=900&q=85',traits:['Elegante','Independiente'],pers:'Bebe con la patita, como si fuera una reina.',likes:'Dormir en el sol',base:8,r:-1.5},
+  {id:'d4',name:'Chispa',kind:'perro',photo:'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=85',traits:['Intenso/a','Valiente'],pers:'Después de correr, el bowl es un jacuzzi.',likes:'Jugar a la pelota hasta el infinito',base:15,r:1.5},
+  {id:'d5',name:'Coco',kind:'perro',photo:'https://images.unsplash.com/photo-1583337130417-3346a1be7dde?auto=format&fit=crop&w=900&q=85',traits:['Payaso/a','Protector/a'],pers:'Se pone la cara adentro del bowl y sopla burbujas.',likes:'Cumpleaños con sombrerito',base:23,r:-1},
+  {id:'d6',name:'Luna',kind:'gato',photo:'https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=900&q=85',traits:['Elegante','Dormilón/a'],pers:'Solo toma agua cuando nadie la mira.',likes:'Posar para la cámara',base:17,r:2.2}
+];
+let mine=store.get('ma_pets',[]);
+let liked=new Set(store.get('ma_liked',[]));
+let wfilter='todos',pickedTraits=new Set(),photoData=null;
+
+const chips=$('#chips');
+TRAITS.forEach(t=>{
+  const b=el('button','chip',t);b.type='button';b.setAttribute('aria-pressed','false');
+  b.addEventListener('click',()=>{
+    if(pickedTraits.has(t))pickedTraits.delete(t);else if(pickedTraits.size<3)pickedTraits.add(t);
+    $$('.chip').forEach(c=>{const on=pickedTraits.has(c.textContent);c.setAttribute('aria-pressed',String(on));c.disabled=!on&&pickedTraits.size>=3});
+  });
+  chips.append(b);
+});
+$('#ppers').addEventListener('input',e=>$('#c1').textContent=e.target.value.length);
+
+const drop=$('#drop'),file=$('#file'),preview=$('#preview'),hint=$('#dropHint'),ferr=$('#formerr');
+function showPhoto(data){photoData=data;preview.src=data;preview.hidden=false;hint.hidden=true}
+function handleFile(f){
+  ferr.textContent='';
+  if(!f)return;
+  if(!/^image\/(jpeg|png|webp|gif|heic|heif)$/i.test(f.type)){ferr.textContent='Ese archivo no parece una imagen válida.';return}
+  if(f.size>20*1024*1024){ferr.textContent='La imagen pesa demasiado (máx. 20 MB).';return}
+  const url=URL.createObjectURL(f),img=new Image();
+  img.onload=()=>{
+    const MAX=640,k=Math.min(1,MAX/Math.max(img.width,img.height));
+    const c=document.createElement('canvas');c.width=Math.round(img.width*k);c.height=Math.round(img.height*k);
+    c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+    URL.revokeObjectURL(url);showPhoto(c.toDataURL('image/jpeg',.78));
+  };
+  img.onerror=()=>{URL.revokeObjectURL(url);ferr.textContent='No pude leer esa imagen. Probá con un JPG o PNG.'};
+  img.src=url;
+}
+file.addEventListener('change',()=>handleFile(file.files[0]));
+['dragenter','dragover'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add('over')}));
+['dragleave','drop'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove('over')}));
+drop.addEventListener('drop',e=>handleFile(e.dataTransfer.files[0]));
+
+/* Imagen de prueba aleatoria */
+$('#sample').addEventListener('click',()=>{
+  const dogs=['mochi','chispa','coco','tango','bruno'],cats=['pixel','nube','luna','lenteja'];
+  const k=$('#pkind').value;const pool=k==='gato'?cats:k==='perro'?dogs:dogs.concat(cats);
+  const key=pool[Math.floor(Math.random()*pool.length)];
+  ferr.textContent='';showPhoto(petURI(key,{acc:'bowl'}));
+  if(!$('#pname').value)$('#pname').value=key.charAt(0).toUpperCase()+key.slice(1);
+});
+
+$('#petForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=$('#pname').value.trim();
+  if(!name){ferr.textContent='Poné el nombre de tu mascota.';$('#pname').focus();return}
+  const pet={id:'m'+Date.now(),name,kind:$('#pkind').value,photo:photoData,traits:[...pickedTraits],pers:$('#ppers').value.trim(),likes:$('#plike').value.trim(),mine:true,base:0,r:(Math.random()*4-2)};
+  const next=[pet,...mine];
+  if(!store.set('ma_pets',next)){ferr.textContent='No hay lugar para guardar más fotos en este navegador. Borrá alguna de "Mis fotos" e intentá de nuevo.';return}
+  mine=next;
+  e.target.reset();pickedTraits.clear();photoData=null;preview.hidden=true;hint.hidden=false;ferr.textContent='';
+  $('#c1').textContent='0';$$('.chip').forEach(c=>{c.setAttribute('aria-pressed','false');c.disabled=false});
+  wfilter='todos';syncWF();renderWall(pet.id);
+  const w=$('#wall');w.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
+  setTimeout(()=>{const [x,y]=center(w);burst(x,Math.min(y,innerHeight/2),['🐾','💧','🎉','💖','✨'],26)},500);
+  say(`¡${name} ya está en el muro! 🎉`);
+});
+
+function card(p,isNew){
+  const art=el('article','polaroid');art.style.setProperty('--r',p.r+'deg');
+  if(isNew)art.style.animationDuration='.7s';
+  const ph=el('div','photo');
+  if(p.photo){const im=document.createElement('img');im.src=p.photo;im.alt=p.mine?('Foto de '+p.name):('Ilustración de prueba de '+p.name);im.loading='lazy';ph.append(im)}
+  else{const s=el('span',null,EMOJI[p.kind]||'🐾');s.setAttribute('aria-hidden','true');ph.append(s)}
+  if(!p.mine)ph.append(el('span','badge-ej','EJEMPLO'));
+  const body=el('div','pbody');
+  const k=el('div','pkind',p.kind==='perro'?'Perro':p.kind==='gato'?'Gato':'Otro bichito');
+  body.append(el('h3','pname',p.name),k);
+  if(p.traits&&p.traits.length){const t=el('div','ptraits');p.traits.forEach(x=>t.append(el('span',null,x)));body.append(t)}
+  if(p.pers){const q=el('p','pq');q.append(el('b',null,'Cómo es: '),document.createTextNode(p.pers));body.append(q)}
+  if(p.likes){const q=el('p','pq');q.append(el('b',null,'Le encanta: '),document.createTextNode(p.likes));body.append(q)}
+  const foot=el('div','pfoot');
+  const btn=el('button','drops');btn.type='button';btn.setAttribute('aria-pressed',String(liked.has(p.id)));
+  const label=()=>{const n=(p.base||0)+(liked.has(p.id)?1:0);btn.textContent='💧 '+n;btn.setAttribute('aria-label','Dar una gotita a '+p.name+'. Total: '+n)};
+  label();
+  btn.addEventListener('click',()=>{
+    if(liked.has(p.id))liked.delete(p.id);else{liked.add(p.id);const [x,y]=center(btn);burst(x,y,['💧','💖','✨'],8)}
+    store.set('ma_liked',[...liked]);btn.setAttribute('aria-pressed',String(liked.has(p.id)));label();
+    btn.classList.remove('splash');void btn.offsetWidth;btn.classList.add('splash');
+  });
+  foot.append(btn);
+  if(p.mine){
+    const d=el('button','del','Borrar');d.type='button';
+    d.addEventListener('click',()=>{
+      if(!confirm('¿Borrar a '+p.name+' del muro?'))return;
+      mine=mine.filter(m=>m.id!==p.id);store.set('ma_pets',mine);liked.delete(p.id);store.set('ma_liked',[...liked]);renderWall();say(p.name+' fue borrado/a de tu muro.');
+    });
+    foot.append(d);
+  }
+  body.append(foot);art.append(ph,body);return art;
+}
+function renderWall(newId){
+  const wall=$('#wall');wall.innerHTML='';
+  const all=[...mine,...DEMO];
+  const list=all.filter(p=>wfilter==='todos'||(wfilter==='mias'?p.mine:p.kind===wfilter));
+  if(!list.length){wall.append(el('p','empty',wfilter==='mias'?'Todavía no subiste ninguna mascota. ¡Animate!':'No hay mascotas para este filtro.'))}
+  list.forEach(p=>wall.append(card(p,p.id===newId)));
+  $('#wallCount').textContent=all.length+' mascotas · '+mine.length+' tuyas';
+}
+function syncWF(){$$('[data-wf]').forEach(b=>{const a=b.dataset.wf===wfilter;b.classList.toggle('active',a);b.setAttribute('aria-pressed',String(a))})}
+$$('[data-wf]').forEach(b=>b.addEventListener('click',()=>{wfilter=b.dataset.wf;syncWF();renderWall()}));
+renderWall();
+
+/* ---------- Adopciones demo ---------- */
+const animals=[
+ {name:'Mora',type:'perro',age:'2 años aprox.',city:'Ejemplo · Neuquén',tag:'Compañera de paseos',img:'https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=85',story:'Le encanta olfatear todo y dormir cerca de la gente. Busca una familia paciente.',special:false},
+ {name:'Pixel',type:'gato',age:'8 meses aprox.',city:'Ejemplo · Río Negro',tag:'Curioso profesional',img:'https://images.unsplash.com/photo-1573865526739-10659ded8a3?auto=format&fit=crop&w=900&q=85',story:'Investiga cada caja y convierte cualquier cordón en un juguete. Ideal para un hogar seguro.',special:false},
+ {name:'Tango',type:'perro',age:'5 años aprox.',city:'Ejemplo · Buenos Aires',tag:'Necesita cuidados',img:'https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?auto=format&fit=crop&w=900&q=85',story:'Perfil de muestra de un perro que necesita evaluación veterinaria y un hogar adaptado.',special:true},
+ {name:'Nube',type:'gato',age:'1 año aprox.',city:'Ejemplo · Córdoba',tag:'Experta en siestas',img:'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=900&q=85',story:'Tranquila y observadora. La adopción responsable incluye conocer sus hábitos y necesidades.',special:false},
+ {name:'Chispa',type:'perro',age:'1 año aprox.',city:'Ejemplo · Mendoza',tag:'Energía para compartir',img:'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=85',story:'Necesita paseos y actividades apropiadas. Su familia ideal tendrá tiempo para acompañarla.',special:false},
+ {name:'Lenteja',type:'gato',age:'3 años aprox.',city:'Ejemplo · Santa Fe',tag:'Necesita cuidados',img:'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=85',story:'Ejemplo de una publicación que debería incluir información clara sobre tratamiento y adaptación.',special:true}
+];
+let af='todos';const grid=$('#animalGrid');
+function renderAnimals(){
+  const list=animals.filter(a=>af==='todos'||(af==='especial'?a.special:a.type===af));
+  grid.innerHTML='';
+  if(!list.length){grid.append(el('p','empty','No hay perfiles de ejemplo para este filtro.'));return}
+  list.forEach(a=>{
+    const c=el('article','animal-card');
+    const v=el('div','animal-visual');const im=document.createElement('img');im.src=a.img;im.alt='Ilustración de prueba de '+a.name+', '+(a.type==='perro'?'un perro':'un gato');im.loading='lazy';v.append(im);
+    const i=el('div','animal-info');
+    const m=el('div','animal-meta');m.append(el('span',null,(a.type==='perro'?'Perro':'Gato')+' · '+a.age),el('span',null,a.city));
+    const b=el('button','btn light','Ver cómo sería ↗');b.type='button';
+    b.addEventListener('click',()=>{const [x,y]=center(b);burst(x,y,['💖','🐾'],8);say('Perfil de demostración. La plataforma todavía no gestiona adopciones reales.')});
+    i.append(el('span','tag',a.tag),el('h3',null,a.name),el('p',null,a.story),m,b);
+    c.append(v,i);grid.append(c);
+  });
+}
+$$('[data-filter]').forEach(b=>b.addEventListener('click',()=>{
+  af=b.dataset.filter;
+  $$('[data-filter]').forEach(x=>{const a=x===b;x.classList.toggle('active',a);x.setAttribute('aria-pressed',String(a))});
+  renderAnimals();
+}));
+renderAnimals();
+
+/* ---------- Formulario de sumarse (demo) ---------- */
+$('#joinForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const [x,y]=center(e.submitter||e.target);burst(x,y,['🐾','💖','✨'],16);
+  say('¡Gracias por querer sumar! Esta demo no guarda ni envía tus datos todavía.');e.currentTarget.reset();
+});
+})();
+</script>
+</body>
+</html>
