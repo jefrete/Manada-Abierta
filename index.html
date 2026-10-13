@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#fff7d6">
-<meta name="description" content="Manada Abierta: una comunidad abierta para conectar adopciones responsables, ayuda veterinaria y convivencia segura. Mirá clips tiernos y subí a tu mascota tomando agua.">
-<title>Manada Abierta — Una red para cuidar mejor</title>
+<meta name="description" content="Manada Abierta es un proyecto comunitario y open source para conectar adopciones responsables, ayuda veterinaria, refugios y personas que quieren colaborar con el bienestar animal.">
+<title>Manada Abierta — Bienestar animal, código abierto y comunidad</title>
 <style>
 :root{
   --paper:#fff7d6;--ink:#2b0a1d;--muted:#6b4455;--line:#f0dcb4;
@@ -298,6 +298,19 @@ footer{border-top:3px solid var(--ink);padding:26px 0 34px;display:flex;justify-
 .trail{position:fixed;pointer-events:none;z-index:40;font-size:1rem;left:0;top:0;animation:trail .9s forwards}
 @keyframes trail{from{opacity:.8;transform:translate(var(--x),var(--y)) scale(1) rotate(var(--rot))}to{opacity:0;transform:translate(var(--x),calc(var(--y) + 24px)) scale(.4) rotate(var(--rot))}}
 
+/* ---------- Recursos visuales libres ---------- */
+.source-section{padding-top:12px;padding-bottom:58px}
+.source-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.source-card{overflow:hidden;background:#fff;border:3px solid var(--ink);border-radius:18px;box-shadow:var(--pop);text-decoration:none;display:flex;flex-direction:column;transition:transform .18s}
+.source-card:hover{transform:translateY(-4px)}
+.source-card img{width:100%;height:138px;object-fit:cover;display:block;background:#f4e7d2}
+.source-card .source-copy{padding:13px;display:flex;flex-direction:column;gap:5px;flex:1}
+.source-card strong{font-size:1rem;line-height:1.2}
+.source-card span{font-size:.78rem;color:var(--muted)}
+.source-note{margin-top:18px;padding:16px 18px;border:2px dashed var(--ink);border-radius:16px;background:#fff9e8;font-size:.9rem}
+@media(max-width:900px){.source-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.source-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.source-card img{height:120px}}
+
 @media(max-width:1000px){
   .tt-layout{grid-template-columns:1fr auto;}
   .tt-copy{grid-column:1/-1}
@@ -331,6 +344,15 @@ footer{border-top:3px solid var(--ink);padding:26px 0 34px;display:flex;justify-
   *,*:before,*:after{animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
 }
+
+.hero-slideshow{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-1;opacity:1;transition:opacity .65s ease,transform 5s ease;transform:scale(1.015)}
+.hero-slideshow.fade-out{opacity:0;transform:scale(1.055)}
+.hero-photo-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#21081718 0%,#21081705 45%,#21081780 100%);pointer-events:none}
+.hero-slide-count{position:absolute;left:16px;bottom:18px;z-index:2;background:#fff9e8;border:2px solid var(--ink);border-radius:999px;padding:7px 12px;font-size:.78rem;font-weight:850;box-shadow:3px 4px 0 #21081755}
+.hero-art .blob{opacity:.22}
+.hero-art .hero-pet{display:none}
+@media(prefers-reduced-motion:reduce){.hero-slideshow,.hero-slideshow.fade-out{transition:none;transform:none}}
+
 </style>
 </head>
 <body>
@@ -338,33 +360,36 @@ footer{border-top:3px solid var(--ink);padding:26px 0 34px;display:flex;justify-
 <header class="wrap topbar">
   <a class="brand" href="#" aria-label="Manada Abierta, inicio"><span class="brandmark">🐾</span><span>MANADA<br>ABIERTA</span></a>
   <nav aria-label="Navegación principal">
-    <a href="#tiktok">Clips tiernos</a>
-    <a href="#muro">Muro de sedientos</a>
+    <a href="#proyecto">El proyecto</a>
     <a href="#adopciones">Adopciones</a>
-    <a href="#ayudar">Ayudar</a>
-    <a href="#convivencia">Convivencia</a>
+    <a href="#ayudar">Ayuda y refugios</a>
+    <a href="#recursos-visuales">Fotos libres</a>
+    <a href="#sumate">Cómo colaborar</a>
   </nav>
-  <a class="btn small" href="#muro">Subir mi mascota 💧</a>
+  <a class="btn small" href="#sumate">Sumarme al proyecto 🤝</a>
 </header>
 
 <main>
 <section class="wrap hero" style="padding-bottom:56px">
   <div>
-    <div class="eyebrow">Una comunidad abierta a todos</div>
-    <h1>Una manada.<br>Un montón de <span class="swap" id="swap">sorbos</span> para ayudar.</h1>
-    <p class="lead">Conectamos perros, gatos y personas para que las adopciones sean más fáciles, la ayuda llegue más lejos y podamos convivir con más cuidado. Y además: clips para explotar de ternura y un muro donde mostrar a tu mascota tomando agua.</p>
+    <div class="eyebrow">Bienestar animal · Comunidad · Código abierto</div>
+    <h1>Una manada.<br>Muchas manos. <span class="swap" id="swap">un propósito</span>.</h1>
+    <p class="lead">Manada Abierta conecta a quienes quieren mejorar la vida de perros y gatos: adopciones responsables, orientación veterinaria, colaboración entre refugios y herramientas digitales construidas en comunidad. No necesitás ser senior para hacer algo que importe.</p>
     <div class="actions">
-      <a class="btn" href="#tiktok">Ver clips tiernos 🎬</a>
-      <a class="btn yel" href="#muro">Subir mi mascota 📸</a>
-      <a class="btn light" href="#adopciones">Encontrar compañero →</a>
+      <a class="btn" href="#sumate">Quiero colaborar 🤝</a>
+      <a class="btn yel" href="#proyecto">Conocer el proyecto 🌱</a>
+      <a class="btn light" href="#adopciones">Ver demo de adopciones →</a>
     </div>
-    <p class="tiny">Proyecto comunitario abierto · Argentina · En construcción, con los pies en la tierra.</p>
+    <p class="tiny">Proyecto comunitario y open source · Argentina · Prototipo en construcción.</p>
   </div>
-  <div class="hero-art" role="group" aria-label="Ilustración interactiva">
+  <div class="hero-art" role="group" aria-label="Presentación automática de fotos de perros y gatos">
+    <img class="hero-slideshow" id="heroSlideshow" src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1200&h=1000&q=85" alt="Perrito adorable" fetchpriority="high">
+    <div class="hero-photo-shade" aria-hidden="true"></div>
+    <div class="hero-slide-count" id="heroSlideCount" aria-live="polite">Fotos de la manada</div>
     <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
     <span class="sticker s1" aria-hidden="true">💖</span><span class="sticker s2" aria-hidden="true">✨</span><span class="sticker s3" aria-hidden="true">🐟</span>
-    <button class="hero-pet" id="heroPet" type="button" aria-label="Acariciar al perrito"></button>
-    <div class="art-note">Acariciá al corgi. Dale, no muerde. 💧</div>
+    <button class="hero-pet" id="heroPet" type="button" aria-label="Presentación de fotos de mascotas"></button>
+    <div class="art-note">Fotos de la manada cambiando automáticamente 🐶🐱</div>
   </div>
 </section>
 
@@ -372,19 +397,45 @@ footer{border-top:3px solid var(--ink);padding:26px 0 34px;display:flex;justify-
 
 <div class="wrap">
   <div class="stats">
-    <div class="stat"><strong>Red abierta</strong><span>Personas, refugios y profesionales</span></div>
-    <div class="stat"><strong>Transparencia primero</strong><span>Casos y aportes con seguimiento</span></div>
-    <div class="stat"><strong>De todos</strong><span>Colaboración sin protagonismos</span></div>
+    <div class="stat"><strong>Adopciones responsables</strong><span>Perfiles claros y cuidado primero</span></div>
+    <div class="stat"><strong>Colaboración verificable</strong><span>Ayuda con responsables y transparencia</span></div>
+    <div class="stat"><strong>Código abierto</strong><span>Aprender, probar y construir entre todos</span></div>
   </div>
 </div>
+
+<!-- ===================== RECURSOS VISUALES ===================== -->
+<section class="wrap source-section" id="recursos-visuales">
+  <div class="section-head reveal">
+    <div><div class="eyebrow">Recursos para construir en abierto</div><h2>Imágenes lindas,<br>permisos claros. 📷</h2></div>
+    <p>Una web de bienestar animal necesita fotos dignas y accesibles. Estos cinco catálogos sirven para buscar imágenes gratuitas o con licencias abiertas; cada archivo tiene sus propias condiciones, así que revisá la licencia antes de publicarlo.</p>
+  </div>
+  <div class="source-grid reveal">
+    <a class="source-card" href="https://unsplash.com/s/photos/rescue-dog" target="_blank" rel="noopener noreferrer">
+      <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=700&q=80" alt="Perro mirando a cámara" loading="lazy"><div class="source-copy"><strong>Unsplash</strong><span>Fotografía editorial y retratos de animales ↗</span></div>
+    </a>
+    <a class="source-card" href="https://www.pexels.com/search/dog%20rescue/" target="_blank" rel="noopener noreferrer">
+      <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Perro al aire libre" loading="lazy"><div class="source-copy"><strong>Pexels</strong><span>Fotos y videos para proyectos web ↗</span></div>
+    </a>
+    <a class="source-card" href="https://pixabay.com/images/search/animal%20shelter/" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_1280.jpg" alt="Perro en una fotografía de muestra" loading="lazy"><div class="source-copy"><strong>Pixabay</strong><span>Fotos, ilustraciones y otros recursos ↗</span></div>
+    </a>
+    <a class="source-card" href="https://commons.wikimedia.org/wiki/Category:Domestic_dogs" target="_blank" rel="noopener noreferrer">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Puppy%20dog.jpg?width=700" alt="Cachorros fotografiados para Wikimedia Commons" loading="lazy"><div class="source-copy"><strong>Wikimedia Commons</strong><span>Archivos con licencias y datos de autor ↗</span></div>
+    </a>
+    <a class="source-card" href="https://openverse.org/search/image?q=animal%20shelter" target="_blank" rel="noopener noreferrer">
+      <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=700&q=80" alt="Perro y gato juntos" loading="lazy"><div class="source-copy"><strong>Openverse</strong><span>Buscador de medios con licencias abiertas ↗</span></div>
+    </a>
+  </div>
+  <div class="source-note"><strong>Para colaborar:</strong> si sumás una foto al repositorio, anotá su URL de origen, autor cuando corresponda, licencia y fecha de consulta. Evitá publicar caras, domicilios, chapitas con datos personales o imágenes de animales reales sin autorización. Las fotos de esta demo no representan casos de adopción reales.</div>
+</section>
 
 <!-- ===================== TIKTOK ===================== -->
 <div class="tt-wrap" id="tiktok">
   <div class="wrap tt-layout">
     <div class="tt-copy reveal">
       <div class="eyebrow">Clips de la manada</div>
-      <h2>Ternura en <em>modo scroll</em>. 🎬</h2>
-      <p>Deslizá hacia arriba, tocá dos veces para dar corazón, comentá y seguí a tus favoritos. Deslizá por una colección ampliada de fotos de cachorritos y gatitos bebés. También podés pegar links de TikTok reales para incrustar videos.</p>
+      <h2>Historias que acercan a la <em>manada</em>. 🎬</h2>
+      <p>Este feed es una muestra visual para compartir historias de animales y promover el cuidado responsable. Las publicaciones son ficticias y sirven para probar la interfaz; más adelante podrían convertirse en historias verificadas de refugios y adopciones.</p>
       <form class="ttform" id="ttForm" novalidate>
         <label for="ttUrl">Agregá un TikTok real</label>
         <div class="ttrow">
@@ -499,7 +550,7 @@ footer{border-top:3px solid var(--ink);padding:26px 0 34px;display:flex;justify-
   </div>
   <div class="animal-grid" id="animalGrid" aria-live="polite"></div>
   <p class="tiny">Los perfiles y las imágenes son ficticios y sirven únicamente para la demostración. No representan animales disponibles para adopción.</p>
-  <p class="tiny">Fotos de muestra: <a href="https://unsplash.com/" target="_blank" rel="noreferrer">Unsplash</a>. Antes de publicar en producción, revisá la licencia y conservá la atribución cuando corresponda. También podés buscar imágenes con licencia abierta en <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">Pexels</a>, <a href="https://pixabay.com/" target="_blank" rel="noreferrer">Pixabay</a> y <a href="https://commons.wikimedia.org/" target="_blank" rel="noreferrer">Wikimedia Commons</a>.</p>
+  <p class="tiny">Las fotos de este prototipo son ilustrativas. Para publicar imágenes reales, verificá los permisos, la licencia, la atribución y el consentimiento de quien corresponda.</p>
 </section>
 
 <!-- ===================== AYUDAR ===================== -->
@@ -544,7 +595,7 @@ footer{border-top:3px solid var(--ink);padding:26px 0 34px;display:flex;justify-
     <div>
       <div class="eyebrow" style="color:var(--ink)">Nuestra idea</div>
       <h2>La manada está abierta. La ayuda también.</h2>
-      <p>Creemos que mucha gente quiere hacer algo bueno, pero no siempre sabe por dónde empezar. Queremos conectar esas ganas con necesidades concretas, información clara y herramientas que cualquiera pueda mejorar.</p>
+      <p>Manada Abierta es un proyecto comunitario y open source: queremos conectar adopciones responsables, ayuda veterinaria, refugios y rescatistas, campañas transparentes y convivencia segura. También es un espacio para aprender desarrollo real en equipo, desde corregir un texto o probar la versión móvil hasta proponer funcionalidades.</p>
       <a class="btn" href="#sumate">Construirlo entre todos ↗</a>
     </div>
     <div class="manifesto-mark" aria-hidden="true"><span>🐕</span><br><span>🐈</span></div>
@@ -556,13 +607,13 @@ footer{border-top:3px solid var(--ink);padding:26px 0 34px;display:flex;justify-
   <div class="join-copy">
     <div class="eyebrow">Sumate al proyecto</div>
     <h2>Una idea abierta necesita más manos.</h2>
-    <p>¿Sos rescatista, veterinario/a, programador/a, diseñador/a, tenés un refugio o simplemente querés ayudar? Contanos qué te gustaría aportar.</p>
+    <p>¿Sos rescatista, veterinario/a, programador/a, diseñador/a, tester, documentador/a, tenés un refugio o simplemente querés ayudar? Podés empezar con una tarea pequeña: mejorar accesibilidad, probar filtros, escribir una guía o proponer una idea.</p>
     <p class="tiny">Este formulario es una demostración local. No envía ni almacena información personal.</p>
   </div>
   <form class="form" id="joinForm">
     <div class="field"><label for="name">Nombre o alias</label><input type="text" id="name" name="name" required maxlength="70" placeholder="¿Cómo te llamamos?"></div>
     <div class="field"><label for="role">Quiero participar como</label>
-      <select id="role" name="role" required><option value="">Elegí una opción</option><option>Voluntario/a</option><option>Rescatista o refugio</option><option>Veterinario/a</option><option>Programador/a</option><option>Diseñador/a</option><option>Proveedor/a o donante</option><option>Otro aporte</option></select></div>
+      <select id="role" name="role" required><option value="">Elegí una opción</option><option>Voluntario/a</option><option>Rescatista o refugio</option><option>Veterinario/a</option><option>Programador/a</option><option>Diseñador/a</option><option>Testing / QA</option><option>Documentación</option><option>Refugio o rescatista</option><option>Otro aporte</option></select></div>
     <div class="field full"><label for="city">Ciudad / provincia (opcional)</label><input type="text" id="city" name="city" maxlength="90" placeholder="Ej.: Junín de los Andes, Neuquén"></div>
     <div class="field full"><label for="idea">¿Qué te gustaría aportar?</label><textarea id="idea" name="idea" required maxlength="600" placeholder="Una habilidad, una idea, un problema que viste…"></textarea></div>
     <button class="btn" type="submit">Probar envío →</button>
@@ -574,7 +625,7 @@ footer{border-top:3px solid var(--ink);padding:26px 0 34px;display:flex;justify-
 <footer class="wrap">
   <a class="brand" href="#"><span class="brandmark">🐾</span><span>MANADA ABIERTA</span></a>
   <div>Proyecto abierto · Argentina · 2026</div>
-  <div class="footer-links"><a href="README.md">Documentación</a><a href="CONTRIBUTING.md">Cómo colaborar</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></div>
+  <div class="footer-links"><a href="#proyecto">El proyecto</a><a href="#recursos-visuales">Bancos de imágenes</a><a href="#sumate">Cómo colaborar</a><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
@@ -790,8 +841,93 @@ const CLIPS=[
  {u:'@gatito.dormilon',cap:'Se quedó dormido arriba de su juguete 🥹',snd:'♫ sonido original · Manada',pet:{p:'lenteja'},photo:'https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=900&h=1600&q=85',likes:100166,com:8242,sh:8878},
  {u:'@patitas.de.algodon',cap:'Dos patitas y un corazón enorme 💗',snd:'♫ sonido original · Manada',pet:{p:'nube'},photo:'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=900&h=1600&q=85',likes:117557,com:8859,sh:9981},
  {u:'@michi.jefe',cap:'No llega a la mesa pero ya es el dueño de casa 😼',snd:'♫ sonido original · Manada',pet:{p:'pixel'},photo:'https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=900&h=1600&q=85',likes:134948,com:976,sh:11084},
- {u:'@bebes.gatunos',cap:'Pequeñito, curioso y lleno de personalidad 🐱',snd:'♫ sonido original · Manada',pet:{p:'luna'},photo:'https://images.unsplash.com/photo-1573865526739-10659ded8a3?auto=format&fit=crop&w=900&h=1600&q=85',likes:152339,com:1593,sh:12187}
+ {u:'@bebes.gatunos',cap:'Pequeñito, curioso y lleno de personalidad 🐱',snd:'♫ sonido original · Manada',pet:{p:'luna'},photo:'https://images.unsplash.com/photo-1573865526739-10659ded8a3?auto=format&fit=crop&w=900&h=1600&q=85',likes:152339,com:1593,sh:12187},
+ {u:'@bebes.de.patas',cap:'Mini cachorro, maxi ternura 🐶💗',snd:'♫ sonido original · Manada',pet:{p:'coco'},photo:'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&h=1600&q=85',likes:31000,com:900,sh:1500},
+ {u:'@michi.de.bolsillo',cap:'Una carita para alegrarte el día 🐱',snd:'♫ sonido original · Manada',pet:{p:'luna'},photo:'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&h=1600&q=85',likes:50871,com:1619,sh:2783},
+ {u:'@cachorros.jugando',cap:'Hora de jugar con la pelota 🎾',snd:'♫ sonido original · Manada',pet:{p:'chispa'},photo:'https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&h=1600&q=85',likes:70742,com:2338,sh:4066},
+ {u:'@gatito.curioso',cap:'Todo es nuevo para este michi bebé ✨',snd:'♫ sonido original · Manada',pet:{p:'pixel'},photo:'https://images.unsplash.com/photo-1573865526739-10659ded8a3?auto=format&fit=crop&w=900&h=1600&q=85',likes:90613,com:3057,sh:5349},
+ {u:'@patitas.dormilonas',cap:'El sueño le ganó a la aventura 💤',snd:'♫ sonido original · Manada',pet:{p:'nube'},photo:'https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=900&h=1600&q=85',likes:110484,com:3776,sh:6632},
+ {u:'@perritos.con.amor',cap:'Un abrazo peludo que lo arregla todo 💖',snd:'♫ sonido original · Manada',pet:{p:'bruno'},photo:'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&h=1600&q=85',likes:130355,com:4495,sh:7915},
+ {u:'@michis.al.sol',cap:'Rayito de sol para esta mini pantera ☀️',snd:'♫ sonido original · Manada',pet:{p:'luna'},photo:'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=900&h=1600&q=85',likes:150226,com:5214,sh:9198},
+ {u:'@bebes.juguetones',cap:'Cinco minutos de energía y siesta larga 😂',snd:'♫ sonido original · Manada',pet:{p:'tango'},photo:'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=900&h=1600&q=85',likes:170097,com:5933,sh:10481},
+ {u:'@gatito.algodon',cap:'Bigotes pequeños, personalidad enorme 🐾',snd:'♫ sonido original · Manada',pet:{p:'lenteja'},photo:'https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=900&h=1600&q=85',likes:189968,com:6652,sh:11764},
+ {u:'@cachorro.explorador',cap:'Conociendo el mundo con patitas nuevas 🌎',snd:'♫ sonido original · Manada',pet:{p:'mochi'},photo:'https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=900&h=1600&q=85',likes:209839,com:7371,sh:13047},
+ {u:'@michi.bolita',cap:'El ronroneo más lindo de la casa 🥹',snd:'♫ sonido original · Manada',pet:{p:'nube'},photo:'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=900&h=1600&q=85',likes:49710,com:8090,sh:14330},
+ {u:'@adopcion.que.cambia',cap:'Una familia puede empezar con una mirada 🏡',snd:'♫ sonido original · Manada',pet:{p:'bruno'},photo:'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&h=1600&q=85',likes:69581,com:1009,sh:15613},
+ {u:'@gatitos.mimosos',cap:'¿Quién puede resistirse a esos ojitos? 😭',snd:'♫ sonido original · Manada',pet:{p:'pixel'},photo:'https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=900&h=1600&q=85',likes:89452,com:1728,sh:16896},
+ {u:'@cachorritos.club2',cap:'Patitas torpes, amor infinito 💞',snd:'♫ sonido original · Manada',pet:{p:'coco'},photo:'https://images.unsplash.com/photo-1525253086316-d0c936c814f8?auto=format&fit=crop&w=900&h=1600&q=85',likes:109323,com:2447,sh:18179},
+ {u:'@michi.pequenito',cap:'El rey de la siesta llegó 🐈',snd:'♫ sonido original · Manada',pet:{p:'luna'},photo:'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=900&h=1600&q=85',likes:129194,com:3166,sh:19462}
 ];
+
+/* Las imágenes remotas pueden cambiar o bloquear el hotlink. Mostrar una alternativa si una URL falla. */
+document.querySelectorAll('.source-card img').forEach((img)=>{
+  img.addEventListener('error',()=>{
+    if(img.dataset.fallbackTried) return;
+    img.dataset.fallbackTried='1';
+    img.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=700&q=80';
+  },{once:true});
+});
+
+/* ---------- Hero: presentación automática con todas las fotos de la página ---------- */
+(function setupHeroSlideshow(){
+  const heroImg=document.getElementById('heroSlideshow');
+  const counter=document.getElementById('heroSlideCount');
+  if(!heroImg) return;
+  const sources=[];
+  const add=(url)=>{
+    if(!url || typeof url!=='string' || !/^https?:\/\//i.test(url)) return;
+    const clean=url.replace(/&amp;/g,'&');
+    if(!sources.includes(clean)) sources.push(clean);
+  };
+  // Imágenes de publicaciones, adopciones y demás secciones.
+  document.querySelectorAll('img[src]').forEach(img=>add(img.currentSrc||img.src));
+  // También incluir todas las fotos del feed, aunque estén fuera de pantalla o con carga diferida.
+  if(typeof CLIPS!=='undefined') CLIPS.forEach(clip=>add(clip.photo));
+  // Reservas extra para que la presentación incluya variedad de cachorros y gatitos.
+  [
+    'https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1200&h=1000&q=85',
+    'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&h=1000&q=85',
+    'https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1200&h=1000&q=85',
+    'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&h=1000&q=85',
+    'https://images.unsplash.com/photo-1573865526739-10659ded8a3?auto=format&fit=crop&w=1200&h=1000&q=85',
+    'https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=1200&h=1000&q=85',
+    'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1200&h=1000&q=85',
+    'https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=1200&h=1000&q=85',
+    'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=1200&h=1000&q=85',
+    'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&h=1000&q=85',
+    'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&h=1000&q=85',
+    'https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=1200&h=1000&q=85'
+  ].forEach(add);
+  if(!sources.length) return;
+  let index=Math.max(0,sources.indexOf(heroImg.src));
+  let failed=new Set();
+  const show=(next)=>{
+    if(sources.length<2) return;
+    index=(next+sources.length)%sources.length;
+    heroImg.classList.add('fade-out');
+    window.setTimeout(()=>{
+      heroImg.onload=()=>{
+        heroImg.classList.remove('fade-out');
+        if(counter) counter.textContent='Foto '+(index+1)+' de '+sources.length+' · Perritos y gatitos';
+      };
+      heroImg.onerror=()=>{
+        failed.add(sources[index]);
+        if(failed.size<sources.length) show(index+1);
+        else {heroImg.classList.remove('fade-out'); if(counter) counter.textContent='La manada te espera 🐾';}
+      };
+      heroImg.src=sources[index];
+      heroImg.alt='Foto '+(index+1)+' de la presentación de mascotas';
+    },420);
+  };
+  // Actualizar una vez que el resto de la página haya renderizado sus tarjetas.
+  window.setTimeout(()=>{
+    document.querySelectorAll('img[src]').forEach(img=>add(img.currentSrc||img.src));
+    if(typeof CLIPS!=='undefined') CLIPS.forEach(clip=>add(clip.photo));
+    if(counter) counter.textContent='Presentación de '+sources.length+' fotos 🐾';
+    if(sources.length>1) window.setInterval(()=>show(index+1),3800);
+  },900);
+})();
+
 const POOL=[['@gatolover99','no puedo, me explotó el corazón 😭💖'],['@perrito.fan','necesito uno YA'],['@mica.y.sus.gatos','el sonido de fondo 🔥'],['@pablo_arg','jajaja increíble'],['@anita.rescata','adopten, no compren 🐾'],['@vete.sofi','ese bowl siempre lleno, así se hace 💧'],['@juancito','lo miré 14 veces seguidas']];
 function fmt(n){return n>=1e6?(n/1e6).toFixed(1).replace('.0','')+'M':n>=1e3?(n/1e3).toFixed(1).replace('.0','')+'K':String(n)}
 
